@@ -2,6 +2,8 @@ set tabstop=2
 set autoindent
 set expandtab
 set shiftwidth=2
+set foldmethod=indent
+set foldlevel=2
 syntax enable
 " http://qiita.com/kuwana/items/d9778a9ec42a53b3aa10
 inoremap {<Enter> {}<Left><CR><ESC><S-o>

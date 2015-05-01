@@ -62,5 +62,4 @@ alias cp='cp -i'
 alias mv='mv -i'
  
 alias mkdir='mkdir -p'
-#alias node="rlwrap node"
-#alias node="env NODE_NO_READLINE=1 rlwrap node"
+alias vi='vim'
