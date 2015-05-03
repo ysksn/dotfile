@@ -4,11 +4,14 @@ set expandtab
 set shiftwidth=2
 set foldmethod=indent
 set foldlevel=2
+set clipboard+=unnamed
+set clipboard+=autoselect
 syntax enable
 " http://qiita.com/kuwana/items/d9778a9ec42a53b3aa10
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>)]}
+au BufRead,BufNewFile *.md set filetype=markdown
 
 "---------------------------
 " Start Neobundle Settings.
@@ -22,6 +25,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " neobundle自体をneobundleで管理
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'scrooloose/syntastic'
