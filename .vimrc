@@ -6,6 +6,7 @@ set foldmethod=indent
 set foldlevel=2
 set clipboard+=unnamed
 set clipboard+=autoselect
+set paste
 syntax enable
 " http://qiita.com/kuwana/items/d9778a9ec42a53b3aa10
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
