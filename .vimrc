@@ -3,10 +3,10 @@ set autoindent
 set expandtab
 set shiftwidth=2
 set foldmethod=indent
-set foldlevel=2
+set foldlevel=4
 set clipboard+=unnamed
 set clipboard+=autoselect
-set paste
+set hlsearch
 syntax enable
 " http://qiita.com/kuwana/items/d9778a9ec42a53b3aa10
 inoremap {<Enter> {}<Left><CR><ESC><S-o>

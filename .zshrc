@@ -56,10 +56,8 @@ bindkey '^R' history-incremental-pattern-search-backward
  
 alias la='ls -a'
 alias ll='ls -l'
- 
-alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
- 
 alias mkdir='mkdir -p'
 alias vi='vim'
+alias grep='grep --color'
