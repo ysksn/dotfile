@@ -1,0 +1,5 @@
+[Added Associations]
+application/pdf=chromium.desktop;
+
+[Default Applications]
+application/pdf=chromium.desktop
