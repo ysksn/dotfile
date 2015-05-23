@@ -1,3 +1,4 @@
+colorscheme pablo
 set tabstop=2
 set autoindent
 set expandtab
