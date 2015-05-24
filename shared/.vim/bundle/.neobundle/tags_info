@@ -1,0 +1,9 @@
+emmet-vim
+neobundle.vim
+neocomplete
+open-browser.vim
+previm
+syntastic
+tern_for_vim
+vim-autoclose
+vim-markdown
