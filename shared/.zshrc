@@ -60,7 +60,6 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias vi='vim'
-alias grep='grep --color'
 alias ctags='`brew --prefix`/bin/ctags'
 
 ########################################
