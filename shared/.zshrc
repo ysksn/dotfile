@@ -1,14 +1,17 @@
-#eval "$(rbenv init - zsh)"
-#export PATH=/usr/local/bin:$PATH
-#export PATH="$HOME/.rbenv/bin:$PATH"
-export LANG=ja_JP.UTF-8
+# for rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
 
-autoload -Uz colors
-colors
+export LANG=ja_JP.UTF-8
 
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
+
+# color zsh
+autoload -Uz colors
+colors
+PROMPT="%(?.%{${fg[green]}%}.%{${fg[red]}%})[%n@%m]%{${reset_color}%} %# "
 
 # 補完
 # 補完機能を有効にする
@@ -62,15 +65,5 @@ alias mkdir='mkdir -p'
 alias vi='vim'
 alias ctags='`brew --prefix`/bin/ctags'
 
-########################################
-# color in less
-man() {
-    env LESS_TERMCAP_mb=$'\E[01;31m' \
-    LESS_TERMCAP_md=$'\E[01;38;5;74m' \
-    LESS_TERMCAP_me=$'\E[0m' \
-    LESS_TERMCAP_se=$'\E[0m' \
-    LESS_TERMCAP_so=$'\E[38;5;246m' \
-    LESS_TERMCAP_ue=$'\E[0m' \
-    LESS_TERMCAP_us=$'\E[04;38;5;146m' \
-    man "$@"
-}
+# zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
