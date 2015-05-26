@@ -1,6 +1,6 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
-  window_state = fullscreen
+  window_state = maximise
 [keybindings]
   paste = <Primary><Shift>v
 [profiles]
