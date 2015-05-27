@@ -1,5 +1,12 @@
-# default PATH
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+OS=`uname`
+if [ $OS = 'Darwin' ]; then
+  # default PATH
+  export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+  # zsh-syntax-highlighting.zsh
+  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+elif [ $OS = 'Linux' ]; then
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 # for rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -67,10 +74,3 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias vi='vim'
 alias ctags='`brew --prefix`/bin/ctags'
-
-# zsh-syntax-highlighting.zsh
-if [ `uname` = 'Linux' ]; then
-  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-else
-  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
