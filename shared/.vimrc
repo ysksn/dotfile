@@ -16,9 +16,9 @@ inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>)]}
 au BufRead,BufNewFile *.md set filetype=markdown
 
-"---------------------------
+"----------------------------------------------------------------------
 " Start Neobundle Settings.
-"---------------------------
+"----------------------------------------------------------------------
 " bundleで管理するディレクトリを指定
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 
@@ -51,14 +51,15 @@ filetype plugin indent on
 " 毎回聞かれると邪魔な場合もあるので、この設定は任意です。
 NeoBundleCheck
 
-"-------------------------
+"--------------------------------------------------------------------
 " End Neobundle Settings.
-"-------------------------
+"--------------------------------------------------------------------
 "
-"-------------------------
-"neocomplete.vim Configuration Examples from
-"https://github.com/Shougo/neocomplete.vim
-"-------------------------
+"--------------------------------------------------------------------
+" neocomplete.vim Configuration Examples from
+" https://github.com/Shougo/neocomplete.vim
+" Start neocomplete Settings.
+"--------------------------------------------------------------------
 "
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
@@ -130,11 +131,13 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+"--------------------------------------------------------------------
+" End neocomplete Settings.
+"--------------------------------------------------------------------
 
-
-"-------------------------
+"--------------------------------------------------------------------
 " Start Vundle Settings.
-"-------------------------
+"--------------------------------------------------------------------
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -152,7 +155,7 @@ Plugin 'gmarik/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
-Plugin 'L9'
+" Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
@@ -180,6 +183,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-"-------------------------
+"--------------------------------------------------------------------
 " End Vundle Settings.
-"-------------------------
+"--------------------------------------------------------------------
