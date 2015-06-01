@@ -1,0 +1,12 @@
+[user]
+  name = Yosuke Kabuto
+  email = bluewhale1982@gmail.com
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+[web]
+  browser = google-chrome
+[color]
+  ui = auto
+[github]
+  user = ysksn

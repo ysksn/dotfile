@@ -1,4 +1,4 @@
-colorscheme pablo
+colorscheme elflord
 set tabstop=2
 set autoindent
 set expandtab
@@ -27,7 +27,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 " neobundle自体をneobundleで管理
 NeoBundleFetch 'Shougo/neobundle.vim'
-
+NeoBundle 'Shougo/neosnippet'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
