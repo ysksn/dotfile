@@ -1,6 +1,7 @@
 emmet-vim
 neobundle.vim
 neocomplete
+neosnippet
 open-browser.vim
 previm
 syntastic
