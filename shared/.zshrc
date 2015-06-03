@@ -4,6 +4,8 @@ if [ $OS = 'Darwin' ]; then
   export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
   # zsh-syntax-highlighting.zsh
   source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  # zsh-completions
+  fpath=(/usr/local/share/zsh-completions $fpath)
 elif [ $OS = 'Linux' ]; then
   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
@@ -25,7 +27,8 @@ PROMPT="%(?.%{${fg[green]}%}.%{${fg[red]}%})[%n@%m]%{${reset_color}%} %# "
 
 # 補完
 # 補完機能を有効にする
-autoload -Uz compinit
+plugins+=(zsh-completions)
+autoload -U compinit
 compinit
  
 # 補完で小文字でも大文字にマッチさせる
