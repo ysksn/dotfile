@@ -30,7 +30,10 @@ Vagrant.configure(2) do |config|
     /sbin/chkconfig postgresql on
 
     # php
-    yum -y install php53.x86_64 php-mbstring
+    yum -y remove php php-*
+    rpm -Uvh http://mirror.webtatic.com/yum/centos/5/latest.rpm
+    yum -y --enablerepo=webtatic install php php-mbstring
+    yum -y --enablerepo=webtatic update php
 
     # Apache
     yum -y install httpd
