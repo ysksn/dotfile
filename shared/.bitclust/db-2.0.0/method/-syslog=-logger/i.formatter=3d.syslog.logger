@@ -1,0 +1,34 @@
+names=formatter=
+visibility=public
+kind=defined
+
+--- formatter=(formatter)
+
+ログを出力する際に使用するフォーマッターをセットします。
+
+@param formatter 4 つの引数 (severity, time, program name, message) を
+                 受け取る call メソッドを 持つオブジェクトを指定します。
+
+引数 formatter が持つ call メソッドは以下の 4 つの引数 (severity,
+time, program name, message) を受けとります。
+
+: severity
+
+  このメッセージのログレベル([[c:Logger::Severity]] 参照)。
+
+: time
+
+  このメッセージが記録された時刻を表す [[c:Time]] オブジェクト。
+
+: progname
+
+  無視されます。互換性のために用意されています。
+
+: message
+
+  記録するメッセージ。
+
+call メソッドは文字列を返す必要があります。
+
+@see [[m:Syslog::Logger#formatter]]
+

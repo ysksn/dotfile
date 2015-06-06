@@ -1,0 +1,8 @@
+requires=
+classes=RDoc=Parser=Text
+methods=
+sublibraries=
+is_sublibrary=true
+category=
+
+プログラムを含まないテキストを解析するためのサブライブラリです。

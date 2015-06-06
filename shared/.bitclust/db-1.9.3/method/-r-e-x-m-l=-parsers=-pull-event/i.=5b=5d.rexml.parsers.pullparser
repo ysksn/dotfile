@@ -1,0 +1,14 @@
+names=[]
+visibility=public
+kind=defined
+
+--- [](nth) -> object
+--- [](start, len) -> [object]
+イベントのパラメータを取り出します。
+
+[[m:Array#[] ]] と同様の引数を取ります。
+
+@param nth nth番目のイベントパラメータを取り出します
+@param start start番目から len 個のイベントを取り出します
+@param len start番目から len 個のイベントを取り出します
+

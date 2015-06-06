@@ -1,0 +1,9 @@
+type=class
+superclass=Object
+included=
+extended=
+library=rdoc.generator.ri
+aliases=
+aliasof=
+
+ri のためのファイルを生成するためのクラスです。

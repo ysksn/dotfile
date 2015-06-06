@@ -1,0 +1,11 @@
+names=cancel
+visibility=public
+kind=defined
+
+--- cancel -> ()
+タプルをキャンセルし、タプルスペースから取り除きます。
+
+すでにタプルスペースから取り除かれている場合には何もしません。
+
+@see [[m:Rinda::TupleEntry#canceled?]]
+

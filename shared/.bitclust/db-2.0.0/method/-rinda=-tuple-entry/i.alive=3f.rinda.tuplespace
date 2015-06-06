@@ -1,0 +1,9 @@
+names=alive?
+visibility=public
+kind=defined
+
+--- alive? -> bool
+タプルが有効である(期限切れでもなく、キャンセルされていない)ならば
+真を返します。
+
+@see [[m:Rinda::TupleEntry#canceled?]], [[m:Rinda::TupleEntry#expired?]]

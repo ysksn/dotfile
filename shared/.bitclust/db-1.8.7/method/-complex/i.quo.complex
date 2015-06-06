@@ -1,0 +1,23 @@
+names=quo
+visibility=public
+kind=defined
+
+--- quo(other) -> Complex
+
+self を other で割った商を返します。
+
+[[lib:rational]] ライブラリを require している場合は、
+成分を有理数の範囲で計算できるなら実部・虚部が [[c:Rational]] の複素数で結果を返します。
+
+@param other self を割る数を指定します。
+
+  require 'complex'
+  z = Complex.new(1, 0)
+  
+  z.quo(2)    #=> Complex(0.5, 0.0)
+  z.quo(2.0)  #=> Complex(0.5, 0.0)
+  
+  require 'rational'
+  z.quo(2)    #=> Complex(Rational(1, 2), Rational(0, 1))
+  z.quo(2.0)  #=> Complex(0.5, 0.0)
+

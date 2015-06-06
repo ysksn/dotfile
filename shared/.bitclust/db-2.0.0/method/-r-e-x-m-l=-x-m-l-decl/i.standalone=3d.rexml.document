@@ -1,0 +1,11 @@
+names=standalone=
+visibility=public
+kind=defined
+
+--- standalone=(value)
+スタンドアロン文書であるかどうかを "yes" "no" で設定します。
+
+この属性を省略したい場合は nil を指定します。
+
+@param value 設定値(文字列)
+

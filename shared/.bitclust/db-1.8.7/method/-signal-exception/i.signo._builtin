@@ -1,0 +1,8 @@
+names=signo
+visibility=public
+kind=defined
+
+--- signo -> Integer
+
+self のシグナル番号を返します。
+

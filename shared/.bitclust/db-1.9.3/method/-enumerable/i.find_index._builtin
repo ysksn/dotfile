@@ -1,0 +1,28 @@
+names=find_index
+visibility=public
+kind=defined
+
+--- find_index(val)               -> Integer | nil
+--- find_index {|obj| ... }       -> Integer | nil
+--- find_index                    -> Enumerator
+
+条件に一致する最初の要素の位置を返します。
+
+@param val 位置を知りたいオブジェクトを指定します。
+
+指定された val と == で等しい最初の要素の位置を返します。
+等しい要素がひとつもなかった場合は nil を返します。
+
+   (1..10).find_index(11)  #=> nil 
+   (1..10).find_index(2)   #=> 1
+
+ブロックが与えられた場合には、各要素を引数として先頭から順にブロックを実行し、
+ブロックが真を返した最初の要素の位置を返します。
+一つも真にならなかった場合は nil を返します。
+
+   (1..10).find_index  {|i| i % 5 == 0 and i % 7 == 0 }   #=> nil
+   (1..100).find_index {|i| i % 5 == 0 and i % 7 == 0 }   #=> 34
+
+引数、ブロックのどちらも与えられなかった場合は、
+[[c:Enumerator]] のインスタンスを返します。
+

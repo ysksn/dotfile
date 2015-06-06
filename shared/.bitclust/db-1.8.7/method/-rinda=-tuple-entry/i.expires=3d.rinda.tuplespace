@@ -1,0 +1,11 @@
+names=expires=
+visibility=public
+kind=defined
+
+--- expires=(expires) 
+タプルの期限切れの時刻を指定します。
+
+@param expires 期限切れの時刻([[c:Time]])
+
+@see [[m:Rinda::TupleEntry#expires]]
+

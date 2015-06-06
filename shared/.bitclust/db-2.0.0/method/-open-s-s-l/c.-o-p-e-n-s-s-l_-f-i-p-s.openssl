@@ -1,0 +1,14 @@
+names=OPENSSL_FIPS
+visibility=public
+kind=defined
+
+--- OPENSSL_FIPS -> bool
+
+システムにインストールされている OpenSSL が FIPS を
+サポートしているならば true です。
+
+していなければ false です。
+
+@see [[m:OpenSSL.#fips_mode=]]
+
+

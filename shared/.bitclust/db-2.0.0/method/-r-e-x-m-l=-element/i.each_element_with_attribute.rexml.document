@@ -1,0 +1,37 @@
+names=each_element_with_attribute
+visibility=public
+kind=defined
+
+--- each_element_with_attribute(key, value = nil, max = 0, name = nil) {|element| ... } -> ()
+
+特定の属性を持つすべての子要素を引数としてブロックを呼び出します。
+
+key で指定した属性名の属性を持つ要素のみを対象とします。
+value を指定すると、keyで指定した属性名を持つ属性の値がvalueである
+もののみを対象とします。
+maxを指定すると、対象となる子要素の先頭 max 個のみが対象となります。
+name を指定すると、それは xpath 文字列と見なされ、
+それにマッチするもののみが対象となります。
+
+max に 0 を指定すると、max の指定は無視されます(0個ではありません)。
+
+@param key 属性名(文字列)
+@param value 属性値(文字列)
+@param max ブロック呼出の対象とする子要素の最大個数
+@param name xpath文字列
+
+==== 例
+  require 'rexml/document'
+  doc = REXML::Document.new("<a><b id='1'/><c id='2'/><d id='1'/><e/></a>")
+  doc.root.each_element_with_attribute('id'){|e| p e }
+  # >> <b id='1'/>
+  # >> <c id='2'/>
+  # >> <d id='1'/>
+  doc.root.each_element_with_attribute('id', '1'){|e| p e }
+  # >> <b id='1'/>
+  # >> <d id='1'/>
+  doc.root.each_element_with_attribute('id', '1', 1){|e| p e }
+  # >> <b id='1'/>
+  doc.root.each_element_with_attribute('id', '1', 0, 'd'){|e| p e }
+  # >> <d id='1'/>
+  

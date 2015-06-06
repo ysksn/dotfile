@@ -1,0 +1,9 @@
+names=debug?
+visibility=public
+kind=defined
+
+--- debug? -> bool
+
+self が DEBUG 以上の(syslog の debug)ログレベルのメッセージを記録する場
+合に true を返します。
+

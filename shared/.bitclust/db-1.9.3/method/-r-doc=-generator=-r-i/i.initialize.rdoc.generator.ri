@@ -1,0 +1,11 @@
+names=initialize
+visibility=public
+kind=defined
+
+--- initialize(options)        -> RDoc::Generator::RI
+
+[[c:RDoc::Generator::RI]] オブジェクトを初期化します。
+
+
+@param options [[c:RDoc::Options]] オブジェクトを指定します。
+

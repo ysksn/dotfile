@@ -1,0 +1,16 @@
+names=read
+visibility=public
+kind=defined
+
+--- read(tuple, sec=nil) -> [Array|Hash]
+
+タプルスペース内の tuple にマッチするタプルを一つコピーして返します。
+
+内部的にはリモートオブジェクトの [[m:Rinda::TupleSpace#read]] にフォワードされます。
+詳細は [[m:Rinda::TupleSpace#read]] を参照してください。
+
+@param tuple タプルのパターン
+@param sec タイムアウト秒数
+@raise Rinda::RequestExpiredError read がタイムアウトした場合に発生します
+@raise Ridna::RequestCanceledError read が何らかの理由でキャンセルされた場合に発生します。
+

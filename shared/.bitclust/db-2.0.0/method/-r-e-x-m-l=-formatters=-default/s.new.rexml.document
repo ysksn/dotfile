@@ -1,0 +1,14 @@
+names=new
+visibility=public
+kind=defined
+
+--- new(ie_hack=false) -> REXML::Formatter::Default
+フォーマッタオブジェクトを生成して返します。
+
+このフォーマッタによる出力は基本的にテキストの空白や改行を変化させません。
+
+ie_hack に真を渡すと、空のタグを閉じる前で空白を挿入します。
+これは特定のバージョンのIEのXMLパーサのバグを避けるための機能です。
+
+@param ie_hack 空のタグを閉じる所にスペースを入れるかどうかを指定します
+

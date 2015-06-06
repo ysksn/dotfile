@@ -1,0 +1,35 @@
+names=each_element_with_text
+visibility=public
+kind=defined
+
+--- each_element_with_text(text = nil, max = 0, name = nil) {|element| ... } -> ()
+テキストを子ノードとして
+持つすべての子要素を引数としてブロックを呼び出します。
+
+text を指定すると、テキストの内容が text であるもののみを対象とします。
+maxを指定すると、対象となる子要素の先頭 max 個のみが対象となります。
+name を指定すると、それは xpath 文字列と見なされ、
+それにマッチするもののみが対象となります。
+
+max に 0 を指定すると、max の指定は無視されます(0個ではありません)。
+
+@param text テキストの中身(文字列)
+@param max ブロック呼出の対象とする子要素の最大個数
+@param name xpath文字列
+
+=== 例
+  require 'rexml/document'
+  doc = REXML::Document.new '<a><b>b</b><c>b</c><d>d</d><e/></a>'
+  doc.root.each_element_with_text {|e|p e}
+  # >> <b> ... </>
+  # >> <c> ... </>
+  # >> <d> ... </>
+  doc.root.each_element_with_text('b'){|e|p e}
+  # >> <b> ... </>
+  # >> <c> ... </>
+  doc.root.each_element_with_text('b', 1){|e|p e}
+  # >> <b> ... </>
+  doc.root.each_element_with_text(nil, 0, 'd'){|e|p e}
+  # >> <d> ... </>
+
+

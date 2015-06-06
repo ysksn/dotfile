@@ -1,0 +1,9 @@
+names=string,to_s
+visibility=public
+kind=defined
+
+--- string -> String
+--- to_s -> String
+
+コメント文字列を返します。
+

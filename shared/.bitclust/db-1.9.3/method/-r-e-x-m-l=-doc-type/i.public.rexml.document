@@ -1,0 +1,23 @@
+names=public
+visibility=public
+kind=defined
+
+--- public -> String | nil
+DTD の公開識別子を返します。
+
+DTD が公開識別子による外部サブセットを含んでいない場合は nil を返します。
+
+  require 'rexml/document'
+  doctype = REXML::Document.new(<<EOS).doctype
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  EOS
+  doctype.system # => "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+  doctype.public  # => "-//W3C//DTD XHTML 1.0 Strict//EN"
+  
+  doctype = REXML::Document.new(<<EOS).doctype
+  <!DOCTYPE root SYSTEM "foobar">
+  EOS
+  doctype.system # => "foobar"
+  doctype.public  # => nil
+

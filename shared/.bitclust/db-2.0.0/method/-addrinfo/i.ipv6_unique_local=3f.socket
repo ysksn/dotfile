@@ -1,0 +1,8 @@
+names=ipv6_unique_local?
+visibility=public
+kind=defined
+
+--- ipv6_unique_local? -> bool
+IPv6 のユニークローカルアドレス(fc00::/7, [[rfc:4193]])であれば真を返します。
+
+

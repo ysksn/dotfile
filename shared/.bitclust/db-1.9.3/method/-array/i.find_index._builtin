@@ -1,0 +1,35 @@
+names=find_index,index
+visibility=public
+kind=defined
+
+--- find_index(val)          -> Integer | nil
+--- index(val)               -> Integer | nil
+--- find_index {|item| ...}  -> Integer | nil
+--- index {|item| ...}       -> Integer | nil
+--- find_index               -> Enumerator
+--- index                    -> Enumerator
+
+条件に一致する最初の要素の位置を返します。
+
+@param val 位置を知りたいオブジェクトを指定します。
+
+指定された val と == で等しい最初の要素の位置を返します。
+等しい要素がひとつもなかった場合は nil を返します。
+
+    p [1, 0, 0, 1, 0].index(1)   #=> 0
+    p [1, 0, 0, 0, 0].index(1)   #=> 0
+    p [0, 0, 0, 0, 0].index(1)   #=> nil
+
+ブロックが与えられた場合には、各要素を引数として順にブロックを実行し、
+ブロックが真を返した最初の要素の位置を返します。
+一つも真にならなかった場合は nil を返します。
+
+    p [0, 1, 0, 1, 0].index {|v| v > 0}   #=> 1
+
+
+引数、ブロックのどちらも与えられなかった場合は、
+[[c:Enumerator]] のインスタンスを返します。
+
+@see [[m:Array#rindex]]
+
+

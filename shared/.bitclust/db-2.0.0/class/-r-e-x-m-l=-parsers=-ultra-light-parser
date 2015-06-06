@@ -1,0 +1,9 @@
+type=class
+superclass=Object
+included=
+extended=
+library=rexml.parsers.ultralightparser
+aliases=
+aliasof=
+
+パース結果を配列で作られた木構造により返すパーサクラス。

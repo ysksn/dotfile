@@ -1,0 +1,28 @@
+names=text
+visibility=public
+kind=defined
+
+--- text(path = nil) -> String | nil
+先頭のテキスト子ノードの文字列を返します。
+
+テキストノードを複数保持している場合は最初のノードにしか
+アクセスできないことに注意してください。
+
+raw モードの設定は無視され、常に正規化されたテキストを返します。
+[[m:REXML::Text#value]] も参照してください。
+
+path を渡した場合は、その XPath 文字列で指定される
+テキストノードの文字列を返します。
+
+テキストノードがない場合には nil を返します。
+
+@param path XPath文字列
+@see [[m:REXML::Element#get_text]]
+
+==== 例
+  require 'rexml/document'
+  doc = REXML::Document.new "<p>some text <b>this is bold!</b> more text</p>"
+  # doc.root (<p> ... </p>) は2つのテキストノード("some text " と " more text"
+  # を持っているが、前者を返す
+  doc.root.text # => "some text "
+

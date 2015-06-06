@@ -1,0 +1,11 @@
+names=width
+visibility=public
+kind=defined
+
+--- width -> Integer
+出力のページ幅を返します。
+
+デフォルトは80です。
+
+@see [[m:REXML::Formatters::Pretty#width=]]
+

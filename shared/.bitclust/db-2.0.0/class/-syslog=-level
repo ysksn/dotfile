@@ -1,0 +1,10 @@
+type=module
+superclass=
+included=
+extended=
+library=syslog
+aliases=
+aliasof=
+
+このモジュールには syslog の優先度(priorities)に関する定数が定義されて
+います。

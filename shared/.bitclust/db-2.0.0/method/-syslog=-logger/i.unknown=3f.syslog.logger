@@ -1,0 +1,9 @@
+names=unknown?
+visibility=public
+kind=defined
+
+--- unknown? -> bool
+
+self が UNKNOWN 以上の(syslog の alert)ログレベルのメッセージを記録する
+場合に true を返します。
+

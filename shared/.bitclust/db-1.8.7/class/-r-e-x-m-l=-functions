@@ -1,0 +1,11 @@
+type=module
+superclass=
+included=
+extended=
+library=rexml.document
+aliases=
+aliasof=
+
+内部用なのでユーザは使わないでください。
+
+xpath のパースに使う関数を保持するモジュールです。

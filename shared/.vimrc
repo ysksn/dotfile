@@ -48,6 +48,13 @@ NeoBundle 'Shougo/vimproc.vim', {
 \     'unix' : 'gmake',
 \    },
 \ }
+" gem install rubocop refe2
+" bitclust setup
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'thinca/vim-ref'
+NeoBundle 'yuku-t/vim-ref-ri'
+NeoBundle 'szw/vim-tags'
+NeoBundle 'tpope/vim-endwise'
 
 " 今後このあたりに追加のプラグインをどんどん書いて行きます！！"
 
@@ -238,3 +245,11 @@ if has("autocmd")
     \ endif
 endif
 "--------------------------------------------------------------------
+
+"--------------------------------------------------------------------
+" rubocop
+"--------------------------------------------------------------------
+" syntastic_mode_mapをactiveにするとバッファ保存時にsyntasticが走る
+" active_filetypesに、保存時にsyntasticを走らせるファイルタイプを指定する
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
+let g:syntastic_ruby_checkers = ['rubocop']

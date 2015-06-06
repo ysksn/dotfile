@@ -1,0 +1,11 @@
+names=write
+visibility=public
+kind=defined
+
+--- write(node, output) -> ()
+XML のノード node を output に出力します。
+
+node には任意のXMLノードを指定できます。
+
+@param node 出力するノード
+@param output 出力先(IO など << で出力できるオブジェクト)

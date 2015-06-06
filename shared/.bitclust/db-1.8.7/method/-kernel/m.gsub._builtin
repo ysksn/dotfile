@@ -1,0 +1,27 @@
+names=gsub,gsub!
+visibility=public
+kind=defined
+
+--- gsub(pattern, replace)          -> String
+--- gsub!(pattern, replace)         -> String
+--- gsub(pattern) {|matched| ... }  -> String
+--- gsub!(pattern) {|matched| ... } -> String
+
+組み込み変数 [[m:$_]] の指す文字列内で pattern に
+マッチする部分を全て replace に置き換えます。$_ を返します。
+
+$_.gsub, $_.gsub! とほぼ同じです。
+
+暗号的になりすぎるきらいがあるため、このメソッドの使用は推奨されていません。
+今後はより明示的な $_.gsub, $_.gsub! を使ってください。
+
+$_.gsub とこのメソッド gsub は以下の点で違いがあります。
+
+  * gsub は $_ の値をコピーして、コピーの方を更新し、
+  $_ に再代入します。
+
+@param pattern    置き換える文字列のパターンを表す文字列か正規表現。
+                  文字列を指定した場合は全く同じ文字列にだけマッチする
+@param replace    pattern で指定した文字列と置き換える文字列
+@see [[m:String#gsub]],[[m:$_]]
+

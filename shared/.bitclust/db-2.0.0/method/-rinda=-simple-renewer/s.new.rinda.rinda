@@ -1,0 +1,10 @@
+names=new
+visibility=public
+kind=defined
+
+--- new(sec = 180) -> Rinda::SimpleRenewer
+新たな SimpleRenewer オブジェクトを生成します。
+
+sec で [[m:Rinda::SimpleRenewer#renew]] が返す秒数を指定します。
+@param sec renew が返す秒数
+

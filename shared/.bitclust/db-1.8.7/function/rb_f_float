@@ -1,0 +1,10 @@
+filename=object.c
+macro=false
+private=true
+type=VALUE
+name=rb_f_float
+params=(VALUE obj, VALUE arg)
+
+
+[[m:Kernel.#Float]] の実体です。
+

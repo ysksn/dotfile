@@ -1,0 +1,17 @@
+names=hostname
+visibility=public
+kind=defined
+
+--- hostname -> String | nil
+
+自身の hostname を文字列で返します。また、[[m:URI::Generic#host]] が設
+定されていない場合は nil を返します。
+
+このメソッドは [[m:URI::Generic#host]] に IPv6 アドレスが設定されていた
+場合はブラケットを削除した文字列を返しますがそれ以外は同じ文字列を返し
+ます。
+
+  u = URI("http://[::1]/bar")
+  p u.hostname      # => "::1"
+  p u.host          # => "[::1]"
+

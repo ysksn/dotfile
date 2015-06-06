@@ -1,0 +1,6 @@
+:LOG_CONS	Syslog::Option::LOG_CONS
+:LOG_NDELAY	Syslog::Option::LOG_CONS
+:LOG_NOWAIT	Syslog::Option::LOG_CONS
+:LOG_ODELAY	Syslog::Option::LOG_CONS
+:LOG_PERROR	Syslog::Option::LOG_CONS
+:LOG_PID	Syslog::Option::LOG_CONS

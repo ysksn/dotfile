@@ -1,0 +1,7 @@
+names=start_document
+visibility=public
+kind=defined
+
+--- start_document -> ()
+ドキュメントの先頭で呼び出されるコールバックメソッドです。
+

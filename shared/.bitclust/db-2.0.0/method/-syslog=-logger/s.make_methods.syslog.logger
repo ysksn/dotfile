@@ -1,0 +1,8 @@
+names=make_methods
+visibility=public
+kind=defined
+
+--- make_methods(meth)
+
+ライブラリ内部で使用します。
+

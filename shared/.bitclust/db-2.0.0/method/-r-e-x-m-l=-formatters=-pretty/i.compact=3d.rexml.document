@@ -1,0 +1,10 @@
+names=compact=
+visibility=public
+kind=defined
+
+--- compact=(c)
+出力をコンパクトにするかどうかを設定します。
+
+@param c コンパクトな出力をするかどうかを指定します。
+@see [[m:REXML::Formatters::Pretty#compact]]
+

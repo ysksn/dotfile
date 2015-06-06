@@ -1,0 +1,12 @@
+names=empty?
+visibility=public
+kind=defined
+
+--- empty? -> bool
+未処理のイベントが残っていない場合に真を返します。
+
+@see [[m:REXML::Parsers::PullParser#has_next?]]
+
+
+
+

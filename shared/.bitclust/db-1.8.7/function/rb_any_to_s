@@ -1,0 +1,10 @@
+filename=object.c
+macro=false
+private=false
+type=VALUE
+name=rb_any_to_s
+params=(VALUE obj)
+
+
+[[m:Object#to_s]] の実体です。
+

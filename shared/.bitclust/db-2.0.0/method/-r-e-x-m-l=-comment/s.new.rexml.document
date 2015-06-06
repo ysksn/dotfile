@@ -1,0 +1,16 @@
+names=new
+visibility=public
+kind=defined
+
+--- new(string, parent = nil) -> REXML::Comment
+--- new(comment, parent = nil) -> REXML::Comment
+
+Comment オブジェクトを生成します。
+
+引数に REXML::Comment オブジェクトを渡すとその内容が複製されます
+(親ノードの情報は複製されません)。
+
+@param string コメント文字列
+@param comment REXML::Comment オブジェクト
+@param parent 親ノード
+

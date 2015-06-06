@@ -1,0 +1,11 @@
+type=class
+superclass=REXML=Text
+included=
+extended=
+library=rexml.document
+aliases=
+aliasof=
+
+XML の cdata セクションを表すクラス
+
+cdata とは <![CDATA[ と ]]> で囲まれたテキストデータのことです。

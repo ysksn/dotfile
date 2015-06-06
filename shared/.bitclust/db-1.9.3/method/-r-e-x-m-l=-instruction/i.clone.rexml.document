@@ -1,0 +1,8 @@
+names=clone
+visibility=public
+kind=defined
+
+--- clone -> REXML::Instruction
+self を複製します。
+
+

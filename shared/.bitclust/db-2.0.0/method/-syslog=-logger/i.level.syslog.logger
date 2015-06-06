@@ -1,0 +1,12 @@
+names=level
+visibility=public
+kind=defined
+
+--- level -> Integer
+
+self に設定されたログレベルを返します。
+
+ログレベルは [[c:Logger]] と互換性があります。
+
+@see [[m:Syslog::Logger#level=]]
+

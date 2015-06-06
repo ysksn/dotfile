@@ -1,0 +1,41 @@
+names===
+visibility=public
+kind=defined
+
+--- ==(other) -> bool
+
+other が文字列の場合、[[m:String#eql?]] と同様に文字列の内容を比較します。
+
+変数 [[m:$=]] の値が真であるときは
+アルファベットの大文字小文字を無視して比較します。
+ただし [[m:$=]] 変数はいずれ廃止されることが決まっているので
+[[m:$=]] に頼るべきではありません。
+
+other が文字列でない場合、
+other.to_str が定義されていれば
+other == self の結果を返します。(ただし、 other.to_str は実行されません。)
+そうでなければ false を返します。
+
+@param other    任意のオブジェクト
+@return         true か false
+
+例:
+
+    stringlike = Object.new
+
+    def stringlike.==(other)
+      "string" == other
+    end
+
+    p "string".eql?(stringlike) #=> false
+    p "string" == stringlike    #=> false
+
+    def stringlike.to_str
+      raise
+    end
+
+    p "string".eql?(stringlike) #=> false
+    p "string" == stringlike    #=> true
+
+@see [[m:String#eql?]]
+

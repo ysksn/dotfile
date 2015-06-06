@@ -1,0 +1,14 @@
+names=inflate
+visibility=public
+kind=defined
+
+--- inflate(string) -> String
+
+引数 string を展開します。[[m:Zlib::Inflate.inflate]] と同じです。
+
+@param string 展開する文字列を指定します。
+
+@raise Zlib::NeedDict 展開に辞書が必要な場合に発生します。
+
+@see [[m:Zlib::Inflate.inflate]]
+

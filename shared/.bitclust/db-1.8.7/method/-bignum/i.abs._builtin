@@ -1,0 +1,9 @@
+names=abs
+visibility=public
+kind=defined
+
+--- abs -> Fixnum | Bignum
+
+self の絶対値を返します。
+
+

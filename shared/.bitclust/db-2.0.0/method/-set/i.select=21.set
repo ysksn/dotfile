@@ -1,0 +1,10 @@
+names=select!
+visibility=public
+kind=defined
+
+--- select! {|element| ... } -> self | nil
+
+各要素に対してブロックを評価し、その結果が偽であった要素を self から削除します。
+
+@return 変更があった場合は self を、変更がなかった場合は nil を返します。
+

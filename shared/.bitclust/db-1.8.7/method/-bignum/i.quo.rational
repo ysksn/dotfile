@@ -1,0 +1,18 @@
+names=quo
+visibility=public
+kind=redefined
+
+--- quo(other) -> Rational
+
+self を other で割った商を返します。
+
+再定義前と違って計算結果が有理数の範囲に収まる場合は [[c:Rational]] オブジェクトを返します。
+
+@param other 自身を割る数
+
+例:
+
+  require 'rational'
+  (1<<32).quo(2)              # => Rational(2147483648, 1)
+  (1<<32).quo(2.0)            # => 2147483648.0
+

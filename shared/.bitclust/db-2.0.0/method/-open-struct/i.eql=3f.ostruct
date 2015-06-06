@@ -1,0 +1,17 @@
+names=eql?
+visibility=public
+kind=defined
+
+--- eql?(other) -> bool
+
+self と other が等しい場合に true を返します。そうでない場合は false を
+返します。
+
+具体的には other が [[c:OpenStruct]] オブジェクトかそのサブクラスでかつ、
+self の各要素を保持した内部の [[c:Hash]] が eql? で比較して等しい場合に
+true を返します。
+
+@param other 比較対象のオブジェクトを指定します。
+
+
+

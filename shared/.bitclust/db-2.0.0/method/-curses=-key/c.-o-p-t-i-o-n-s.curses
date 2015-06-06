@@ -1,0 +1,8 @@
+names=OPTIONS
+visibility=public
+kind=defined
+
+--- OPTIONS -> Integer
+
+Options キーを表す定数です。
+

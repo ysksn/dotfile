@@ -1,0 +1,11 @@
+names=add_generator
+visibility=public
+kind=defined
+
+--- add_generator(klass) -> klass
+
+引数 klass で指定したクラスをジェネレータとして登録します。
+
+@param klass 登録するクラスを指定します。
+
+@see [[ref:c:RDoc::Options#custom_options]]

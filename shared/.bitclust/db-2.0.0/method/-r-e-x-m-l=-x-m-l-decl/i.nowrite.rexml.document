@@ -1,0 +1,10 @@
+names=nowrite
+visibility=public
+kind=defined
+
+--- nowrite -> ()
+出力時([[m:REXML::Document#write]]) に XML 宣言を省略する
+よう指示します。
+
+@see [[m:REXML::XMLDecl#dowrite]], [[m:REXML::XMLDecl#writethis]]
+

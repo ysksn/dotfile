@@ -1,0 +1,13 @@
+names=slice_before
+visibility=public
+kind=defined
+
+--- slice_before(pattern) -> Enumerator::Lazy
+--- slice_before {|elt| bool } -> Enumerator::Lazy
+--- slice_before(initial_state) {|elt, state| bool } -> Enumerator::Lazy
+
+[[m:Enumerable#slice_before]] と同じですが、配列ではなく Enumerator::Lazy を返します。
+
+@see [[m:Enumerable#slice_before]]
+
+

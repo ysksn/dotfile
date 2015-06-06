@@ -1,0 +1,41 @@
+names=eql?
+visibility=public
+kind=defined
+
+--- eql?(other) -> bool
+
+文字列の内容が文字列 other の内容と等しいときに true を返します。
+等しくなければ false を返します。
+
+このメソッドは文字列の内容を比較します。
+同一のオブジェクトかどうかを比較するわけではありません。
+つまり、"string".eql?(str) という式を実行した場合には、
+str が "string" という内容の文字列でありさえすれば常に true を返します。
+同一のオブジェクトであるかどうかを判定したいときは
+[[m:Object#equal?]] を使ってください。
+
+アルファベットの大文字小文字を無視して比較したい場合は、[[m:String#upcase]],
+[[m:String#downcase]] で大文字小文字を揃えてから比較してください。
+
+[[c:Hash]] クラス内での比較に使われます。
+
+このメソッドの動作は組み込み変数 [[m:$=]] には影響されません。
+
+@param other    任意のオブジェクト
+@return         true か false
+
+例:
+
+    p "string".eql?("string")  # => true
+    p "string".eql?("STRING")  # => false
+    p "string".eql?("")        # => false
+    p "".eql?("string")        # => false
+    
+    p "string".eql?("str" + "ing")   # => true   (内容が同じなら true)
+    p "string".eql?("stringX".chop)  # => true   (内容が同じなら true)
+    
+    p "string".upcase.eql?("String".upcase)     # => true
+    p "string".downcase.eql?("String".downcase) # => true
+
+@see [[c:Hash]], [[m:String#<=>]], [[m:String#casecmp]], [[m:String#==]]
+

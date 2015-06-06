@@ -1,0 +1,11 @@
+names=raw
+visibility=public
+kind=defined
+
+--- raw -> bool
+"raw" モードであれば真を返します。
+
+raw モードについては [[m:REXML::Text.new]] を参考にしてください。
+
+@see [[m:REXML::Text#raw=]]
+

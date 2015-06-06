@@ -1,0 +1,15 @@
+names=cdata
+visibility=public
+kind=defined
+
+--- cdata(content) -> ()
+CDATA セクションをパースしたときに呼び出されるコールバックメソッドです。
+
+@param content CDATAセクションの内容の文字列が渡されます
+
+==== 例
+  <![CDATA[ xyz ]]>
+というCDATAセクションに対しては
+  content: " xyz "
+という引数が渡されます。
+

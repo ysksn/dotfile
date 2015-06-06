@@ -1,0 +1,8 @@
+:LOG_ALERT	Syslog::Level::LOG_ALERT
+:LOG_CRIT	Syslog::Level::LOG_ALERT
+:LOG_DEBUG	Syslog::Level::LOG_ALERT
+:LOG_EMERG	Syslog::Level::LOG_ALERT
+:LOG_ERR	Syslog::Level::LOG_ALERT
+:LOG_INFO	Syslog::Level::LOG_ALERT
+:LOG_NOTICE	Syslog::Level::LOG_ALERT
+:LOG_WARNING	Syslog::Level::LOG_ALERT

@@ -1,0 +1,20 @@
+names=find
+visibility=public
+kind=defined
+
+--- find                  -> Enumerator
+--- find {|pathname| ...} -> nil
+self 配下のすべてのファイルやディレクトリを
+一つずつ引数 pathname に渡してブロックを実行します。
+
+  require 'find'
+  Find.find(self.to_s) {|f| yield Pathname.new(f)}
+
+と同じです。
+
+ブロックを省略した場合は、上記の処理を行うような [[c:Enumerator]] を返
+します。
+
+
+@see [[m:Find.#find]]
+

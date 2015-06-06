@@ -1,0 +1,12 @@
+names=formatter
+visibility=public
+kind=defined
+
+--- formatter -> Logger::Formatter | Proc
+
+ログを出力する際に使用するフォーマッターを取得します。
+
+デフォルトでは [[c:Logger::Formatter]] オブジェクトを返します。
+
+@see [[m:Syslog::Logger#formatter=]]
+

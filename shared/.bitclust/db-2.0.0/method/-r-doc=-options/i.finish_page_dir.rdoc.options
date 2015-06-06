@@ -1,0 +1,8 @@
+names=finish_page_dir
+visibility=public
+kind=defined
+
+--- finish_page_dir
+
+ライブラリ内部で使用します。
+

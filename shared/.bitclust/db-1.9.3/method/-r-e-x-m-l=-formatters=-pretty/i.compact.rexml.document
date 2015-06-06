@@ -1,0 +1,13 @@
+names=compact
+visibility=public
+kind=defined
+
+--- compact -> bool
+出力をコンパクトにするかどうかを返します。
+
+これが真の場合、出力の空白をできる限り削除しようとします。
+
+デフォルト値は false です。
+
+@see [[m:REXML::Formatters::Pretty#compact=]]
+

@@ -1,0 +1,13 @@
+names=read_all
+visibility=public
+kind=defined
+
+--- read_all(tuple) -> [Array|Hash]
+タプルスペース内の tuple にマッチするタプルをすべてコピーして返します。
+
+内部的にはリモートオブジェクトの [[m:Rinda::TupleSpace#read_all]] にフォワードされます。
+詳細は [[m:Rinda::TupleSpace#read_all]] を参照してください。
+
+@param tuple タプルのパターン
+
+

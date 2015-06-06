@@ -1,0 +1,29 @@
+names=external_id
+visibility=public
+kind=defined
+
+--- external_id -> String | nil
+DTD が外部サブセットを用いている場合は "SYSTEM", "PUBLIC" の
+いずれかの文字列を返します。
+
+それ以外の場合は nil を返します。
+
+  require 'rexml/document'
+  doctype = REXML::Document.new(<<EOS).doctype
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  EOS
+  doctype.name # => "html"
+  doctype.external_id  # => "PUBLIC"
+  
+  doctype = REXML::Document.new(<<EOS).doctype
+  <!DOCTYPE books [
+    <!ELEMENT books (book+)>
+    <!ELEMENT book (title,author)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+  ]>
+  EOS
+  doctype.name # => "books"
+  doctype.external_id # => nil
+

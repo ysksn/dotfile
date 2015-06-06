@@ -1,0 +1,9 @@
+names=size
+visibility=public
+kind=defined
+
+--- size -> Integer
+タプルのサイズ(配列の要素数/ハッシュテーブルのエントリー数)を返します
+
+@see [[m:Rinda::TupleEntry#value]]
+

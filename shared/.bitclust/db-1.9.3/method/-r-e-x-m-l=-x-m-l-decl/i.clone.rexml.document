@@ -1,0 +1,8 @@
+names=clone
+visibility=public
+kind=defined
+
+--- clone -> REXML::XMLDecl
+self を複製します。
+
+

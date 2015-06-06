@@ -1,0 +1,11 @@
+type=class
+superclass=Object
+included=REXML=Encoding
+extended=
+library=rexml.document
+aliases=
+aliasof=
+
+内部用なのでユーザは使わないでください。
+
+各種入力を wrap するクラス。

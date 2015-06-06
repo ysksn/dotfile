@@ -1,0 +1,11 @@
+names=receiver
+visibility=public
+kind=defined
+
+--- receiver    -> object
+
+このメソッドオブジェクトのレシーバを返します。
+
+
+
+

@@ -1,0 +1,17 @@
+names=start_with?
+visibility=public
+kind=defined
+
+--- start_with?(*strs) -> bool
+
+self の先頭が strs のいずれかであるとき true を返します。
+
+@param strs    パターンを表す文字列 (のリスト)
+
+例:
+    "string".start_with?("str")          # => true
+    "string".start_with?("ing")          # => false
+    "string".start_with?("ing", "str")   # => true
+
+@see [[m:String#end_with?]]
+

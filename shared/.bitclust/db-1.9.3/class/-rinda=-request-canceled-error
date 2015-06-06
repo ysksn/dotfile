@@ -1,0 +1,10 @@
+type=class
+superclass=ThreadError
+included=
+extended=
+library=rinda.rinda
+aliases=
+aliasof=
+
+rinda で take などのリクエストが何らかの理由でキャンセルされた
+ことを意味する例外クラス。

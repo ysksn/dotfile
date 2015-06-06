@@ -1,0 +1,8 @@
+names=rewind
+visibility=public
+kind=defined
+
+--- rewind -> ()
+[[m:REXML::Parsers::UltraLightParser.new]] で指定した stream を
+rewind してもう一度パースできる状態にします。
+

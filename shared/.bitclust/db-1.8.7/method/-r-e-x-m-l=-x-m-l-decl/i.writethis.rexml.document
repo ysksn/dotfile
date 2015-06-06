@@ -1,0 +1,11 @@
+names=writethis
+visibility=public
+kind=defined
+
+--- writethis -> bool
+出力時([[m:REXML::Document#write]]) に XML 宣言を出力する(省略しない)
+ならば真を返します。
+
+@see [[m:REXML::XMLDecl#dowrite]], [[m:REXML::XMLDecl#nowrite]]
+
+

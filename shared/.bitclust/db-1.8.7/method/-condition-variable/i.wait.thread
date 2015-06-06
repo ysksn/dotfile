@@ -1,0 +1,13 @@
+names=wait
+visibility=public
+kind=defined
+
+--- wait(mutex) -> self
+
+mutex のロックを解放し、カレントスレッドを停止します。
+[[m:ConditionVariable#signal]]または、
+[[m:ConditionVariable#broadcast]]で送られたシグナルを
+受け取ると、mutexのロックを取得し、実行状態となります。
+
+@param mutex [[c:Mutex]] オブジェクトを指定します。
+

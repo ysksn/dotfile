@@ -1,0 +1,23 @@
+names=value=
+visibility=public
+kind=defined
+
+--- value=(val)
+テキストの内容を val に変更します。
+
+val には非正規化された(エスケープされていない)文字列を渡さなければ
+なりません。
+  
+==== 例
+  require 'rexml/document'
+  e = REXML::Element.new("a")
+  e.add_text("foo")
+  e[0].value = "bar"
+  e.to_s # => "<a>bar</a>"
+  e[0].value = "<a>"
+  e.to_s # => "<a>&lt;a&gt;</a>"
+
+
+
+
+

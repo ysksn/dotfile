@@ -1,0 +1,39 @@
+type=module
+superclass=
+included=
+extended=
+library=forwardable
+aliases=
+aliasof=
+
+オブジェクトに対し、メソッドの委譲機能を定義するモジュールです。
+
+=== 使い方
+
+オブジェクトに対して extend して使います。
+
+例:
+
+  g = Goo.new
+  g.extend SingleForwardable
+  g.def_delegator("@out", :puts)
+  g.puts ...
+
+また、[[c:SingleForwardable]] はクラスやモジュールに対して以下のようにする事もできます。
+
+  class Implementation
+    def self.service
+      puts "serviced!"
+    end
+  end
+  
+  module Facade
+    extend SingleForwardable
+    def_delegator :Implementation, :service
+  end
+
+  Facade.service # => serviced!
+
+もし [[c:Forwardable]] と [[c:SingleForwardable]] の両方を使いたい場合、
+def_instance_delegator と def_single_delegator メソッドの方を呼び出して
+ください。

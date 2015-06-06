@@ -1,0 +1,12 @@
+names=xmldecl
+visibility=public
+kind=defined
+
+--- xmldecl(version, encoding, standalone) -> ()
+
+内容を更新します。
+
+@param version バージョン(文字列)
+@param encoding エンコーディング(文字列 or nil)
+@param standalone スタンドアロン文章かどうか("yes", "no", nil)
+

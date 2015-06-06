@@ -1,0 +1,9 @@
+names=error?
+visibility=public
+kind=defined
+
+--- error? -> bool
+
+self が ERROR 以上の(syslog の warning)ログレベルのメッセージを記録する
+場合に true を返します。
+

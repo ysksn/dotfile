@@ -1,0 +1,13 @@
+names=fips_mode=
+visibility=public
+kind=defined
+
+--- fips_mode=(bool)
+
+FIPS モードを明示的に on/off します。
+
+@raise OpenSSL::OpenSSLError インストールされている OpenSSL が
+       FIPS をサポートしていない場合に発生します。
+
+@see [[m:OpenSSL::OPENSSL_FIPS]]
+

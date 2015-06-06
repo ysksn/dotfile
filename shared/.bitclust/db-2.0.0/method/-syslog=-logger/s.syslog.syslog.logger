@@ -1,0 +1,11 @@
+names=syslog
+visibility=public
+kind=defined
+
+--- syslog -> Syslog
+
+内部の [[c:Syslog]] オブジェクトを返します。
+
+デフォルトでは、最初の [[c:Syslog::Logger]] オブジェクトの作成時に作ら
+れたものを返します。
+

@@ -1,0 +1,9 @@
+names=warn?
+visibility=public
+kind=defined
+
+--- warn? -> bool
+
+self が WARN 以上の(syslog の notice)ログレベルのメッセージを記録する場
+合に true を返します。
+
