@@ -54,8 +54,6 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'yuku-t/vim-ref-ri'
 NeoBundle 'szw/vim-tags'
-NeoBundle 'tpope/vim-endwise'
-
 " 今後このあたりに追加のプラグインをどんどん書いて行きます！！"
 
 call neobundle#end()
