@@ -31,7 +31,7 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
-"NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplete'
@@ -186,4 +186,37 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "--------------------------------------------------------------------
 " End Vundle Settings.
+"--------------------------------------------------------------------
+
+"--------------------------------------------------------------------
+" Start NERDTree Settings.
+"--------------------------------------------------------------------
+" <C-e>でNERDTreeをオンオフ いつでもどこでも
+nmap <silent> <C-e>      :NERDTreeToggle<CR>
+vmap <silent> <C-e> <Esc>:NERDTreeToggle<CR>
+omap <silent> <C-e>      :NERDTreeToggle<CR>
+imap <silent> <C-e> <Esc>:NERDTreeToggle<CR>
+cmap <silent> <C-e> <C-u>:NERDTreeToggle<CR>
+" 引数なしでvimを開いたらNERDTreeを起動、
+" 引数ありならNERDTreeは起動しない、引数で渡されたファイルを開く
+autocmd vimenter * if !argc() | NERDTree | endif
+" 他のバッファをすべて閉じた時にNERDTreeが開いていたらNERDTreeも一緒に閉じる
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" 無視するファイルを設定する
+let g:NERDTreeIgnore=['\.clean$', '\.swp$', '\.bak$', '\~$']
+" 隠しファイルを表示するか
+let g:NERDTreeShowHidden=0
+" ブックマークやヘルプのショートカットをメニューに表示する
+let g:NERDTreeMinimalUI=1
+" +|`などを使ってツリー表示をするか
+" 0 : 綺麗に見せる
+" 1 : +|`などを使わない
+let g:NERDTreeDirArrows=1
+" マウス操作方法
+" 1 : ファイル、ディレクトリ両方共ダブルクリックで開く
+" 2 : ディレクトリのみシングルクリックで開く
+" 3 : ファイル、ディレクトリ両方共シングルクリックで開く
+let g:NERDTreeMouseMode=2
+"--------------------------------------------------------------------
+" End NERDTree Settings.
 "--------------------------------------------------------------------
