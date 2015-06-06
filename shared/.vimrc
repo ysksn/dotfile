@@ -168,6 +168,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " JavaScript bundle for vim, this bundle provides syntax and indent plugins.
 Plugin 'pangloss/vim-javascript'
 Plugin 'JavaScript-syntax'
+Plugin 'Raimondi/delimitMate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
