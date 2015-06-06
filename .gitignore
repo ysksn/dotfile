@@ -2,3 +2,4 @@
 *.swp
 chromium/
 ibus/
+shared/.vim/bundle/*
