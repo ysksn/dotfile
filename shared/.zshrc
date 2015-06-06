@@ -70,10 +70,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 ########################################
 # エイリアス
  
-alias la='ls -al'
 alias ll='ls -al'
-alias cp='cp -i'
-alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias vi='vim'
 alias ctags='`brew --prefix`/bin/ctags'

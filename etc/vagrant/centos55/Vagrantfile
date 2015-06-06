@@ -40,8 +40,9 @@ Vagrant.configure(2) do |config|
     /sbin/service httpd restart
     /sbin/chkconfig httpd on
 
-    # .vimrc
-    echo 'set term=xterm' > /home/vagrant/.vimrc
+    # .bashrc
+    echo 'export PATH=$PATH:/sbin' >> /etc/bashrc
+    echo 'export TERM=xterm' >> /etc/bashrc
   EOT
 end
 
