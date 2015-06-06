@@ -39,6 +39,15 @@ NeoBundle 'marijnh/tern_for_vim', {
   \ 'build': {
   \   'others': 'npm install'
   \}}
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
 
 " 今後このあたりに追加のプラグインをどんどん書いて行きます！！"
 
