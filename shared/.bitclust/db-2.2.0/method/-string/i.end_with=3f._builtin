@@ -1,0 +1,17 @@
+names=end_with?
+visibility=public
+kind=defined
+
+--- end_with?(*strs) -> bool
+
+self の末尾が strs のいずれかであるとき true を返します。
+
+@param strs    パターンを表す文字列 (のリスト)
+
+例:
+    "string".end_with?("ing")          # => true
+    "string".end_with?("str")          # => false
+    "string".end_with?("str", "ing")   # => true
+
+@see [[m:String#start_with?]]
+

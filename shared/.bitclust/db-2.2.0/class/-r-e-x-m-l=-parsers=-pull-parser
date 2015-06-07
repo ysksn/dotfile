@@ -1,0 +1,9 @@
+type=class
+superclass=Object
+included=REXML=XMLTokens
+extended=Forwardable
+library=rexml.parsers.pullparser
+aliases=
+aliasof=
+
+プル方式の XML パーサクラス。

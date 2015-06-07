@@ -1,0 +1,8 @@
+names=index
+visibility=public
+kind=defined
+
+--- index(val) -> String | nil
+
+このメソッドは deprecated です。[[m:SDBM#key]] を使用してください。
+

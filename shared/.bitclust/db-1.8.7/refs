@@ -48,12 +48,47 @@ method,Kernel.#proc,lambda_proc,lambda と proc と Proc.new とイテレータ�
 method,Kernel.#lambda,orphan,orphan な手続きオブジェクトの挙動
 method,Kernel.#proc,orphan,orphan な手続きオブジェクトの挙動
 method,String#scanf,format,scanfフォーマット文字列
-doc,spec/program,exp,式
-doc,spec/program,terminate,プログラムの終り
 doc,spec/call,super,super
 doc,spec/call,block,ブロック付きメソッド呼び出し
 doc,spec/call,yield,yield
 doc,spec/call,block_arg,ブロックパラメータの挙動
+doc,spec/control,if,if
+doc,spec/control,unless,unless
+doc,spec/control,case,case
+doc,spec/control,while,while
+doc,spec/control,until,until
+doc,spec/control,for,for
+doc,spec/control,break,break
+doc,spec/control,next,next
+doc,spec/control,redo,redo
+doc,spec/control,retry,retry
+doc,spec/control,raise,raise
+doc,spec/control,begin,begin
+doc,spec/control,return,return
+doc,spec/control,BEGIN,BEGIN
+doc,spec/control,END,END
+doc,spec/def,class,クラス定義
+doc,spec/def,singleton_class,特異クラス定義
+doc,spec/def,module,モジュール定義
+doc,spec/def,method,メソッド定義
+doc,spec/def,operator,演算子式の定義
+doc,spec/def,nest_method,メソッド定義のネスト
+doc,spec/def,eval_method,メソッドの評価
+doc,spec/def,singleton_method,特異メソッド定義
+doc,spec/def,class_method,クラスメソッドの定義
+doc,spec/def,limit,呼び出し制限
+doc,spec/def,alias,alias
+doc,spec/def,undef,undef
+doc,spec/def,defined,defined?
+doc,spec/lambda_proc,def,手続きオブジェクトとは
+doc,spec/lambda_proc,should_use_next,手続きを中断して値を返す
+doc,spec/lambda_proc,block,Proc オブジェクトをブロック付きメソッド呼び出しに使う
+doc,spec/lambda_proc,lambda_proc,lambda と proc と Proc.new とイテレータの違い
+doc,spec/lambda_proc,orphan,orphan な手続きオブジェクトの挙動
+doc,spec/lexical,identifier,識別子
+doc,spec/lexical,comment,コメント
+doc,spec/lexical,embed,埋め込みドキュメント
+doc,spec/lexical,reserved,予約語
 doc,spec/literal,num,数値リテラル
 doc,spec/literal,string,文字列リテラル
 doc,spec/literal,backslash,バックスラッシュ記法
@@ -75,52 +110,17 @@ doc,spec/operator,and,and
 doc,spec/operator,or,or
 doc,spec/operator,not,not
 doc,spec/operator,cond,条件演算子
-doc,spec/lambda_proc,def,手続きオブジェクトとは
-doc,spec/lambda_proc,should_use_next,手続きを中断して値を返す
-doc,spec/lambda_proc,block,Proc オブジェクトをブロック付きメソッド呼び出しに使う
-doc,spec/lambda_proc,lambda_proc,lambda と proc と Proc.new とイテレータの違い
-doc,spec/lambda_proc,orphan,orphan な手続きオブジェクトの挙動
-doc,spec/lexical,identifier,識別子
-doc,spec/lexical,comment,コメント
-doc,spec/lexical,embed,埋め込みドキュメント
-doc,spec/lexical,reserved,予約語
-doc,spec/rubycmd,cmd_option,コマンドラインオプション
-doc,spec/rubycmd,shebang,インタプリタ行の解釈
-doc,spec/safelevel,level4,レベル 4
-doc,spec/control,if,if
-doc,spec/control,unless,unless
-doc,spec/control,case,case
-doc,spec/control,while,while
-doc,spec/control,until,until
-doc,spec/control,for,for
-doc,spec/control,break,break
-doc,spec/control,next,next
-doc,spec/control,redo,redo
-doc,spec/control,retry,retry
-doc,spec/control,raise,raise
-doc,spec/control,begin,begin
-doc,spec/control,return,return
-doc,spec/control,BEGIN,BEGIN
-doc,spec/control,END,END
-doc,spec/thread,exception,例外発生時のスレッドの振る舞い
-doc,spec/def,class,クラス定義
-doc,spec/def,singleton_class,特異クラス定義
-doc,spec/def,module,モジュール定義
-doc,spec/def,method,メソッド定義
-doc,spec/def,operator,演算子式の定義
-doc,spec/def,nest_method,メソッド定義のネスト
-doc,spec/def,eval_method,メソッドの評価
-doc,spec/def,singleton_method,特異メソッド定義
-doc,spec/def,class_method,クラスメソッドの定義
-doc,spec/def,limit,呼び出し制限
-doc,spec/def,alias,alias
-doc,spec/def,undef,undef
-doc,spec/def,defined,defined?
+doc,spec/program,exp,式
+doc,spec/program,terminate,プログラムの終り
 doc,spec/regexp,regexp,正規表現記号
 doc,spec/regexp,backref,後方参照
 doc,spec/regexp,string,文字クラス
 doc,spec/regexp,backtrack,バックトラック
 doc,spec/regexp,sample,サンプル
+doc,spec/rubycmd,cmd_option,コマンドラインオプション
+doc,spec/rubycmd,shebang,インタプリタ行の解釈
+doc,spec/safelevel,level4,レベル 4
+doc,spec/thread,exception,例外発生時のスレッドの振る舞い
 doc,spec/variables,local,ローカル変数
 doc,spec/variables,instance,インスタンス変数
 doc,spec/variables,class,クラス変数

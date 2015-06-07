@@ -1,0 +1,22 @@
+names=add
+visibility=public
+kind=defined
+
+--- add(severity, message = nil, progname = nil, &block) -> true
+
+メッセージをログに記録します。[[m:Logger#add]] とほぼ同じ動作をします。
+
+ブロックを与えた場合はブロックを評価した返り値をメッセージとしてログに
+記録します。 ユーザがこのメソッドを直接使うことはあまりありません。
+
+@param severity ログレベル。Logger クラスで定義されている定数を指定しま
+                す。この値がレシーバーに設定されているレベルよりも低い
+                場合、メッセージは記録されません。
+
+@param message ログに出力するメッセージを表すオブジェクトを指定します。
+               省略すると nil が用いられます。
+
+@param progname 無視されます。
+
+@see [[m:Logger#add]]
+

@@ -50,57 +50,10 @@ method,Kernel.#proc,lambda_proc,lambda と proc と Proc.new とイテレータ�
 method,Kernel.#lambda,orphan,orphan な手続きオブジェクトの挙動
 method,Kernel.#proc,orphan,orphan な手続きオブジェクトの挙動
 method,String#scanf,format,scanfフォーマット文字列
-doc,spec/program,exp,式
-doc,spec/program,terminate,プログラムの終り
 doc,spec/call,super,super
 doc,spec/call,block,ブロック付きメソッド呼び出し
 doc,spec/call,yield,yield
 doc,spec/call,block_arg,ブロックパラメータの挙動
-doc,spec/literal,num,数値リテラル
-doc,spec/literal,string,文字列リテラル
-doc,spec/literal,backslash,バックスラッシュ記法
-doc,spec/literal,exp,式展開
-doc,spec/literal,command,コマンド出力
-doc,spec/literal,here,ヒアドキュメント (行指向文字列リテラル)
-doc,spec/literal,regexp,正規表現リテラル
-doc,spec/literal,array,配列式
-doc,spec/literal,hash,ハッシュ式
-doc,spec/literal,range,範囲オブジェクト
-doc,spec/literal,symbol,シンボル
-doc,spec/literal,percent,%記法
-doc,spec/operator,assign,代入
-doc,spec/operator,selfassign,自己代入
-doc,spec/operator,multiassign,多重代入
-doc,spec/operator,range,範囲式
-doc,spec/operator,range_cond,条件式としての範囲式
-doc,spec/operator,and,and
-doc,spec/operator,or,or
-doc,spec/operator,not,not
-doc,spec/operator,cond,条件演算子
-doc,spec/lambda_proc,def,手続きオブジェクトとは
-doc,spec/lambda_proc,should_use_next,手続きを中断して値を返す
-doc,spec/lambda_proc,block,Proc オブジェクトをブロック付きメソッド呼び出しに使う
-doc,spec/lambda_proc,lambda_proc,lambda と proc と Proc.new とイテレータの違い
-doc,spec/lambda_proc,orphan,orphan な手続きオブジェクトの挙動
-doc,spec/lexical,identifier,識別子
-doc,spec/lexical,comment,コメント
-doc,spec/lexical,embed,埋め込みドキュメント
-doc,spec/lexical,reserved,予約語
-doc,spec/rubycmd,cmd_option,コマンドラインオプション
-doc,spec/rubycmd,shebang,インタプリタ行の解釈
-doc,spec/m17n,m17n_prog,M17N プログラミングの基本
-doc,spec/m17n,convert,エンコーディングの変更
-doc,spec/m17n,ruby18,Ruby 1.8 からの移行
-doc,spec/m17n,encoding,Ruby がサポートするエンコーディング
-doc,spec/m17n,ascii_compat,ASCII互換エンコーディング
-doc,spec/m17n,7bit_clean,7bit クリーンな文字列
-doc,spec/m17n,binary,バイナリの取扱い
-doc,spec/m17n,dummy,ダミーエンコーディング
-doc,spec/m17n,script_encoding,スクリプトエンコーディング
-doc,spec/m17n,magic_comment,magic comment
-doc,spec/m17n,incompat,1.8 からのスクリプトエンコーディングに関する非互換性
-doc,spec/m17n,literal,リテラルのエンコーディング
-doc,spec/safelevel,level4,レベル 4
 doc,spec/control,if,if
 doc,spec/control,unless,unless
 doc,spec/control,case,case
@@ -116,7 +69,6 @@ doc,spec/control,begin,begin
 doc,spec/control,return,return
 doc,spec/control,BEGIN,BEGIN
 doc,spec/control,END,END
-doc,spec/thread,exception,例外発生時のスレッドの振る舞い
 doc,spec/def,class,クラス定義
 doc,spec/def,singleton_class,特異クラス定義
 doc,spec/def,module,モジュール定義
@@ -130,8 +82,56 @@ doc,spec/def,limit,呼び出し制限
 doc,spec/def,alias,alias
 doc,spec/def,undef,undef
 doc,spec/def,defined,defined?
+doc,spec/lambda_proc,def,手続きオブジェクトとは
+doc,spec/lambda_proc,should_use_next,手続きを中断して値を返す
+doc,spec/lambda_proc,block,Proc オブジェクトをブロック付きメソッド呼び出しに使う
+doc,spec/lambda_proc,lambda_proc,lambda と proc と Proc.new とイテレータの違い
+doc,spec/lambda_proc,orphan,orphan な手続きオブジェクトの挙動
+doc,spec/lexical,identifier,識別子
+doc,spec/lexical,comment,コメント
+doc,spec/lexical,embed,埋め込みドキュメント
+doc,spec/lexical,reserved,予約語
+doc,spec/literal,num,数値リテラル
+doc,spec/literal,string,文字列リテラル
+doc,spec/literal,backslash,バックスラッシュ記法
+doc,spec/literal,exp,式展開
+doc,spec/literal,command,コマンド出力
+doc,spec/literal,here,ヒアドキュメント (行指向文字列リテラル)
+doc,spec/literal,regexp,正規表現リテラル
+doc,spec/literal,array,配列式
+doc,spec/literal,hash,ハッシュ式
+doc,spec/literal,range,範囲オブジェクト
+doc,spec/literal,symbol,シンボル
+doc,spec/literal,percent,%記法
+doc,spec/m17n,m17n_prog,M17N プログラミングの基本
+doc,spec/m17n,convert,エンコーディングの変更
+doc,spec/m17n,ruby18,Ruby 1.8 からの移行
+doc,spec/m17n,encoding,Ruby がサポートするエンコーディング
+doc,spec/m17n,ascii_compat,ASCII互換エンコーディング
+doc,spec/m17n,7bit_clean,7bit クリーンな文字列
+doc,spec/m17n,binary,バイナリの取扱い
+doc,spec/m17n,dummy,ダミーエンコーディング
+doc,spec/m17n,script_encoding,スクリプトエンコーディング
+doc,spec/m17n,magic_comment,magic comment
+doc,spec/m17n,incompat,1.8 からのスクリプトエンコーディングに関する非互換性
+doc,spec/m17n,literal,リテラルのエンコーディング
+doc,spec/operator,assign,代入
+doc,spec/operator,selfassign,自己代入
+doc,spec/operator,multiassign,多重代入
+doc,spec/operator,range,範囲式
+doc,spec/operator,range_cond,条件式としての範囲式
+doc,spec/operator,and,and
+doc,spec/operator,or,or
+doc,spec/operator,not,not
+doc,spec/operator,cond,条件演算子
+doc,spec/program,exp,式
+doc,spec/program,terminate,プログラムの終り
 doc,spec/regexp,string,文字クラス
 doc,spec/regexp,option,オプション
+doc,spec/rubycmd,cmd_option,コマンドラインオプション
+doc,spec/rubycmd,shebang,インタプリタ行の解釈
+doc,spec/safelevel,level4,レベル 4
+doc,spec/thread,exception,例外発生時のスレッドの振る舞い
 doc,spec/variables,local,ローカル変数
 doc,spec/variables,instance,インスタンス変数
 doc,spec/variables,class,クラス変数

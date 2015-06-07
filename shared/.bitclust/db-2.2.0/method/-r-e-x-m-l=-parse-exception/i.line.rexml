@@ -1,0 +1,7 @@
+names=line
+visibility=public
+kind=defined
+
+--- line -> Integer
+パースエラーが起きた(XML上の)場所を行数で返します。
+

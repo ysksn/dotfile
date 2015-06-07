@@ -1,0 +1,23 @@
+names=prepended
+visibility=private 
+kind=defined
+
+--- prepended(class_or_module) -> ()
+
+self が [[m:Module#prepend]] されたときに対象のクラスまたはモジュールを
+引数にしてインタプリタがこのメソッドを呼び出します。
+
+@param class_or_module [[m:Module#prepend]] を実行したオブジェクト
+
+  module A
+    def self.prepended(mod)
+      puts "#{self} prepended to #{mod}"
+    end
+  end
+  module Enumerable
+    prepend A
+  end
+  # => "A prepended to Enumerable"
+
+@see [[m:Module#included]], [[m:Module#prepend]]
+

@@ -1,0 +1,8 @@
+names=HTML_ENTITIES
+visibility=public
+kind=added
+
+--- HTML_ENTITIES -> {String => [Integer]}
+
+HTML の実体参照のマッピングを表す [[c:Hash]] オブジェクトです。
+[[c:RDoc::Markdown]] で使用します。

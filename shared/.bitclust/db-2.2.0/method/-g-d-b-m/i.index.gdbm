@@ -1,0 +1,9 @@
+names=index
+visibility=public
+kind=defined
+
+--- index(val) -> String
+
+このメソッドは deprecated です。[[m:GDBM#key]] を使用してください。
+
+

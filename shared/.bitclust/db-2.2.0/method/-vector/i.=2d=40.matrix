@@ -1,0 +1,9 @@
+names=-@
+visibility=public
+kind=defined
+
+--- -@ -> self
+
+単項演算子の - です。 各要素の符号を反転したベクトルを返します。
+
+

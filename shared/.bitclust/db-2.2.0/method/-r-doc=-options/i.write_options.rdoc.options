@@ -1,0 +1,9 @@
+names=write_options
+visibility=public
+kind=defined
+
+--- write_options -> object
+
+カレントディレクトリの .rdoc_options ファイルに指定した設定を YAML 形式
+で保存します。
+

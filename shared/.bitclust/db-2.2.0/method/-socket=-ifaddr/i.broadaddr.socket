@@ -1,0 +1,9 @@
+names=broadaddr
+visibility=public
+kind=defined
+
+--- broadaddr -> Addrinfo | nil
+
+self のブロードキャストアドレスを [[c:Addrinfo]] オブジェクトで返します。
+self.flags で [[m:Socket::IFF_BROADCAST]] が有効ではない場合は nil を返します。
+

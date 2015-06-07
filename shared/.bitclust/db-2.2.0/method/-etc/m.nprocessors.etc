@@ -1,0 +1,13 @@
+names=nprocessors
+visibility=public
+kind=defined
+
+--- nprocessors -> Integer
+
+有効な CPU コア数を返します。
+
+例:
+
+  require 'etc'
+  p Etc.nprocessors #=> 4
+

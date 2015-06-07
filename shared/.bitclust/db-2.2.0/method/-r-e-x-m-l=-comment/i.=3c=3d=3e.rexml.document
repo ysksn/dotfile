@@ -1,0 +1,7 @@
+names=<=>
+visibility=public
+kind=defined
+
+--- <=>(other) -> -1 | 0 | 1
+other と内容([[m:REXML::Comment#string]])を比較します。
+

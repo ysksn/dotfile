@@ -1,0 +1,13 @@
+names=notationdecl
+visibility=public
+kind=defined
+
+--- notationdecl(name, public_or_system, public_id, system_id) -> ()
+DTDの記法宣言に出会ったときに呼び出されるコールバックメソッドです。
+
+@param name 記法名が文字列で渡されます
+@param public_or_system "PUBLIC" もしくは "SYSTEM" が渡されます
+@param public_id 公開識別子が文字列で渡されます。指定されていない場合はnilが渡されます
+@param system_id システム識別子が文字列で渡されます。指定されていない場合はnilが渡されます
+
+

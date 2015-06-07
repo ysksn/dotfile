@@ -1,0 +1,11 @@
+names=receiver
+visibility=public
+kind=defined
+
+--- receiver -> object
+
+保持するコンテキスト内での self を返します。
+
+このメソッドは以下のコードと同様の動作をします。
+
+  binding.eval("self")

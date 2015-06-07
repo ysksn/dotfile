@@ -1,0 +1,34 @@
+names=attribute
+visibility=public
+kind=defined
+
+--- attribute(name, namespace = nil) -> REXML::Attribute | nil
+
+name で指定される属性を返します。
+
+属性は [[c:REXML::Attribute]] オブジェクトの形で返します。
+
+name は "foo:bar" のように prefix を指定することができます。
+
+namespace で名前空間の URI を指定することで、その名前空間内で
+name という属性名を持つ属性を指定できます。
+
+指定した属性名の属性がない場合は nil を返します。
+
+@param name 属性名(文字列)
+@param namespace 名前空間のURI(文字列)
+==== 例
+  require 'rexml/document'
+  
+  doc = REXML::Document.new(<<-EOS)
+  <root xmlns:foo="http://example.org/foo"
+        xmlns:bar="http://example.org/bar">
+    <a foo:att='1' bar:att='2' att='&lt;'/>
+  </root>
+  EOS
+  a = doc.get_elements("/root/a").first
+  a.attribute("att") # => att='&lt;'
+  a.attribute("att", "http://example.org/bar") # => bar:att='2'
+  a.attribute("bar:att") # => bar:att='2'
+  a.attribute("baz") # => nil
+

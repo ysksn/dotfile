@@ -1,0 +1,9 @@
+names=clone
+visibility=public
+kind=defined
+
+--- clone -> REXML::Document
+self を複製します。
+
+[[m:REXML::Document.new]](self) と同じです。
+

@@ -1,0 +1,11 @@
+names=itself
+visibility=public
+kind=defined
+
+--- itself -> object
+
+self を返します。
+
+  string = 'my string' # => "my string"
+  string.itself.object_id == string.object_id # => true
+

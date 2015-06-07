@@ -1,0 +1,11 @@
+names=new
+visibility=public
+kind=defined
+
+--- new(target, content = nil) -> REXML::Instruction
+新たな Instruction オブジェクトを生成します。
+
+@param target ターゲット
+@param content 内容
+
+  

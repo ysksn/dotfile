@@ -1,0 +1,21 @@
+type=module
+superclass=
+included=
+extended=
+library=rexml.streamlistener
+aliases=
+aliasof=
+
+[[c:REXML::Parsers::StreamParser]]  
+で使われるコールバックオブジェクトのためのモジュールです。
+
+このモジュールを include して、各メソッドを適切にオーバーライドした
+クラスのインスタンスを
+[[m:REXML::Parsers::StreamParser.new]] や
+[[m:REXML::Document.parse_stream]] の引数として渡します。
+
+このモジュールで定義されているメソッド自体は何もしません。
+コールバックのデフォルト動作(何もしない)を定義しているだけです。
+
+詳しい用例などについては [[ref:c:REXML::Parsers::StreamParser#example]] を
+見てください。

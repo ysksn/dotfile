@@ -1,0 +1,12 @@
+names=DECLARATION
+visibility=public
+kind=defined
+
+--- DECLARATION -> REXML::XMLDecl
+この定数は deprecated です。[[m:REXML::XMLDecl.default]] を
+代わりに使ってください。
+
+デフォルトとして使えるXML宣言オブジェクト。
+
+
+

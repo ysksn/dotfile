@@ -1,0 +1,11 @@
+names=systmpdir
+visibility=public
+kind=defined
+
+--- systmpdir -> String | nil
+
+システムのテンポラリディレクトリを返します。
+
+  require 'etc'
+  p Etc.systmpdir # => "/tmp"
+

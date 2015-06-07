@@ -1,0 +1,8 @@
+names=IFF_EBRIDGE
+visibility=public
+kind=defined
+
+--- IFF_EBRIDGE
+
+ethernet bridging device
+

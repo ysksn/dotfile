@@ -1,0 +1,10 @@
+names=renew
+visibility=public
+kind=defined
+
+--- renew -> Integer
+[[c:TupleSpace]] からオブジェクトの寿命を問合せるために呼び出されます。
+
+このメソッド自体は [[m:Rinda::SimpleRenewer.new]] で指定した秒数を
+返します。
+

@@ -1,0 +1,7 @@
+names=SEARCH_INDEX_FILE
+visibility=public
+kind=defined
+
+--- SEARCH_INDEX_FILE -> String
+
+検索インデックスのパスを表す文字列です。

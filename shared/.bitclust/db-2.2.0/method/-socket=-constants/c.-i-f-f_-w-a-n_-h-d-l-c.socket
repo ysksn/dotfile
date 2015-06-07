@@ -1,0 +1,8 @@
+names=IFF_WAN_HDLC
+visibility=public
+kind=defined
+
+--- IFF_WAN_HDLC
+
+WAN HDLC device
+

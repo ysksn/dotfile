@@ -1,0 +1,8 @@
+requires=
+classes=Syslog,Syslog=Constants,Syslog=Macros,Syslog=Option,Syslog=Facility,Syslog=Level
+methods=
+sublibraries=syslog.logger
+is_sublibrary=false
+category=Unix
+
+Unix系OS の syslog を扱うライブラリです。

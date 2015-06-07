@@ -1,0 +1,13 @@
+filename=ruby.h
+macro=true
+private=false
+type=int
+name=NEGFIXABLE
+params=(long f)
+
+
+f が Fixnum の下限値以上ならば真。
+
+@see [[f:FIXNUM_MIN]], [[f:FIXNUM_MAX]], [[f:FIXNUM_P]],
+     [[f:FIXABLE]], [[f:POSFIXABLE]]
+

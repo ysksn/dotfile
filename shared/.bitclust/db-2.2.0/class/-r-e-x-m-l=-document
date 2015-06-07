@@ -1,0 +1,17 @@
+type=class
+superclass=REXML=Element
+included=
+extended=
+library=rexml.document
+aliases=
+aliasof=
+
+XMLの完全な文書(ドキュメント)を表すクラス。
+
+XML処理命令(Processing Instruction, PI)、
+DTD(文書型定義、Document Type Definition)、
+などを含んでいます。
+ドキュメントは直下の子ノードをただ一つ持っています(rootと呼び、
+[[m:REXML::Document#root]] でアクセスできます)。
+2つ目の要素を([[m:REXML::Element#add_element]]などで)追加しようとすると
+例外([[c:RuntimeError]])が発生します。

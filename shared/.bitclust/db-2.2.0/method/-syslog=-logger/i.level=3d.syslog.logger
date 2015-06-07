@@ -1,0 +1,12 @@
+names=level=
+visibility=public
+kind=defined
+
+--- level=(val)
+
+self のログレベルを引数 val で指定した値に設定します。
+
+@param val ログレベルを指定します。
+
+@see [[m:Syslog::Logger#level]]
+

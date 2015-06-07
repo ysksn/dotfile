@@ -1,0 +1,11 @@
+names=markup
+visibility=public
+kind=defined
+
+--- markup -> String
+
+コマンドライン引数の --markup オプションで指定したフォーマットを返しま
+す。
+
+指定されていない場合は 'rdoc' を返します。
+

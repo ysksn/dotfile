@@ -1,0 +1,8 @@
+names=exists?
+visibility=public
+kind=defined
+
+--- exists?(file_name)    -> bool
+
+このメソッドは deprecated です。[[m:Dir.exist?]] を使用してください。
+

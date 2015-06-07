@@ -1,0 +1,10 @@
+type=module
+superclass=
+included=
+extended=
+library=rinda.rinda
+aliases=
+aliasof=
+
+[[lib:rinda/rinda]] および [[lib:rinda/tuplespace]] の名前空間を提供する
+モジュール。

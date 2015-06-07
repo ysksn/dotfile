@@ -1,0 +1,10 @@
+names=write
+visibility=public
+kind=defined
+
+--- write(string, offset=nil, opt={}) -> Integer
+
+IO.write(self.to_s, *args)と同じです。
+
+@see [[m:IO.write]]
+

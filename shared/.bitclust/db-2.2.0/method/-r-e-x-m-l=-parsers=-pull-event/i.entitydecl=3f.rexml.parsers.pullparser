@@ -1,0 +1,7 @@
+names=entitydecl?
+visibility=public
+kind=defined
+
+--- entitydecl? -> bool
+DTDの実体宣言なら真を返します。
+

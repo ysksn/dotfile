@@ -1,0 +1,10 @@
+names=root
+visibility=public
+kind=defined
+
+--- root -> Pathname
+
+コマンドライン引数の --root オプションで指定したディレクトリを返します。
+
+指定されていない場合はカレントディレクトリを返します。
+

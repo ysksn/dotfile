@@ -1,0 +1,8 @@
+names=IFF_TX_SKB_SHARING
+visibility=public
+kind=defined
+
+--- IFF_TX_SKB_SHARING
+
+sharing skbs on transmit
+

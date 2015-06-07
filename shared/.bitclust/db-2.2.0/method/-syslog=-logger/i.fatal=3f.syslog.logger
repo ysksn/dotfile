@@ -1,0 +1,9 @@
+names=fatal?
+visibility=public
+kind=defined
+
+--- fatal? -> bool
+
+self が FATAL 以上の(syslog の err)ログレベルのメッセージを記録する場合
+に true を返します。
+

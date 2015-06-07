@@ -1,0 +1,10 @@
+type=module
+superclass=
+included=
+extended=
+library=syslog
+aliases=
+aliasof=
+
+このモジュールには syslog の機能(facilities)に関する定数が定義されてい
+ます。

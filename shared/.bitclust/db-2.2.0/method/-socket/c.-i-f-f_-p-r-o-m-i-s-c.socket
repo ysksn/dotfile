@@ -1,0 +1,8 @@
+names=IFF_PROMISC
+visibility=public
+kind=defined
+
+--- IFF_PROMISC
+
+receive all packets
+

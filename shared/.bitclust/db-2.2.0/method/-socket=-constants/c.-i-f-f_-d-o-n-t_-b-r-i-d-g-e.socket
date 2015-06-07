@@ -1,0 +1,8 @@
+names=IFF_DONT_BRIDGE
+visibility=public
+kind=defined
+
+--- IFF_DONT_BRIDGE
+
+disallow bridging this ether dev
+

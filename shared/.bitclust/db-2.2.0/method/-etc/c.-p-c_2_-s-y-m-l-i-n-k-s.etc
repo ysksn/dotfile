@@ -1,0 +1,30 @@
+names=PC_2_SYMLINKS,PC_ALLOC_SIZE_MIN,PC_ASYNC_IO,PC_CHOWN_RESTRICTED,PC_FILESIZEBITS,PC_LINK_MAX,PC_MAX_CANON,PC_MAX_INPUT,PC_NAME_MAX,PC_NO_TRUNC,PC_PATH_MAX,PC_PIPE_BUF,PC_PRIO_IO,PC_REC_INCR_XFER_SIZE,PC_REC_MAX_XFER_SIZE,PC_REC_MIN_XFER_SIZE,PC_REC_XFER_ALIGN,PC_SYMLINK_MAX,PC_SYNC_IO,PC_TIMESTAMP_RESOLUTION,PC_VDISABLE
+visibility=public
+kind=defined
+
+--- PC_FILESIZEBITS -> Integer
+--- PC_LINK_MAX -> Integer
+--- PC_MAX_CANON -> Integer
+--- PC_MAX_INPUT -> Integer
+--- PC_NAME_MAX -> Integer
+--- PC_PATH_MAX -> Integer
+--- PC_PIPE_BUF -> Integer
+--- PC_2_SYMLINKS -> Integer
+--- PC_ALLOC_SIZE_MIN -> Integer
+--- PC_REC_INCR_XFER_SIZE -> Integer
+--- PC_REC_MAX_XFER_SIZE -> Integer
+--- PC_REC_MIN_XFER_SIZE -> Integer
+--- PC_REC_XFER_ALIGN -> Integer
+--- PC_SYMLINK_MAX -> Integer
+--- PC_CHOWN_RESTRICTED -> Integer
+--- PC_NO_TRUNC -> Integer
+--- PC_VDISABLE -> Integer
+--- PC_ASYNC_IO -> Integer
+--- PC_PRIO_IO -> Integer
+--- PC_SYNC_IO -> Integer
+--- PC_TIMESTAMP_RESOLUTION -> Integer
+
+[[m:IO#pathconf]] の引数に指定します。
+
+詳細は [[man:fpathconf(3)]] を参照してください。
+

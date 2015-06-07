@@ -1,0 +1,16 @@
+names=LEVEL_MAP
+visibility=public
+kind=defined
+
+--- LEVEL_MAP -> {Fixnum => Fixnum}
+
+[[c:Logger]] のログレベルと [[man:syslog(3)]] のログレベルのマッピング
+を表す [[c:Hash]] オブジェクトです。
+
+[[c:Syslog::Logger]] では、Ruby アプリケーションからのメッセージはシス
+テム上の他のデーモンからの [[man:syslog(3)]] に記録されるメッセージと比
+べて、ログレベルを 1 つ下げて記録されます
+([[m:Logger::Severity::DEBUG]] と [[m:Logger::Severity::INFO]] は除く)。
+例えば、[[m:Logger::Severity::FATAL]] として記録した場合、
+[[m:Syslog::Level::LOG_ERR]] として処理されます。
+

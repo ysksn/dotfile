@@ -1,0 +1,32 @@
+names=delegate,instance_delegate
+visibility=public
+kind=defined
+
+--- instance_delegate(hash) -> ()
+--- delegate(hash)          -> ()
+
+メソッドの委譲先を設定します。
+
+@param hash 委譲先のメソッドがキー、委譲先のオブジェクトが値の
+            [[c:Hash]] を指定します。キーは [[c:Symbol]]、
+            [[c:String]] かその配列で指定します。
+
+
+例:
+
+  require 'forwardable'
+  class Zap
+     extend Forwardable
+     delegate :length => :@str
+     delegate [:first, :last] => :@arr
+     def initialize
+        @arr = %w/foo bar baz/
+        @str = "world"
+     end
+  end
+
+  zap = Zap.new
+  zap.length # => 5
+  zap.first  # => "foo"
+  zap.last   # => "baz"
+

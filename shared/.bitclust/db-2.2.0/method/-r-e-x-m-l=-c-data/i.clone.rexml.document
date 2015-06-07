@@ -1,0 +1,9 @@
+names=clone
+visibility=public
+kind=defined
+
+--- clone -> REXML::CData
+self を複製して返します。
+
+親ノードの情報は複製されません。
+

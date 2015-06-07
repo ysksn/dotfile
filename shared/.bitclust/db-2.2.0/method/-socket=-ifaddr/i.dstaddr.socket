@@ -1,0 +1,8 @@
+names=dstaddr
+visibility=public
+kind=defined
+
+--- dstaddr -> Addrinfo | nil
+
+self の宛先アドレスを [[c:Addrinfo]] オブジェクトで返します。
+self.flags で [[m:Socket::IFF_POINTOPOINT]] が有効ではない場合は nil を返します。

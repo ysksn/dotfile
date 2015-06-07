@@ -1,0 +1,8 @@
+names=IFF_NOTRAILERS
+visibility=public
+kind=defined
+
+--- IFF_NOTRAILERS
+
+avoid use of trailers
+

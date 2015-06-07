@@ -1,0 +1,12 @@
+names=pending_interrupt?
+visibility=public
+kind=defined
+
+--- pending_interrupt?(error = nil) -> bool
+
+self の非同期例外のキューが空かどうかを返します。
+
+@param error 対象の例外クラスを指定します。
+
+@see [[m:Thread.pending_interrupt?]]
+

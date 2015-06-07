@@ -1,0 +1,7 @@
+names===
+visibility=public
+kind=defined
+
+--- ==(other) -> bool
+other と内容([[m:REXML::Comment#string]])が同じならば真を返します。
+

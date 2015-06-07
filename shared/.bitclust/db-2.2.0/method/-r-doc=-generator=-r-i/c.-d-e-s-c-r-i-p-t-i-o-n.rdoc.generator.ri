@@ -1,0 +1,8 @@
+names=DESCRIPTION
+visibility=public
+kind=defined
+
+--- DESCRIPTION -> String
+
+このジェネレータの説明を表す文字列です。
+

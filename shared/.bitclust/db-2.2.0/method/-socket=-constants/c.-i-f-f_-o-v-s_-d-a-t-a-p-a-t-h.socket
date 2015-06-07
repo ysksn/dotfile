@@ -1,0 +1,8 @@
+names=IFF_OVS_DATAPATH
+visibility=public
+kind=defined
+
+--- IFF_OVS_DATAPATH
+
+device used as Open vSwitch datapath port
+

@@ -1,0 +1,8 @@
+names=VERSION
+visibility=public
+kind=defined
+
+--- VERSION -> '2.0'
+
+[[c:Syslog::Logger]] のバージョンを表す文字列です。
+

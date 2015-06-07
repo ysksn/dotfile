@@ -1,0 +1,10 @@
+names=renegotiation_cb
+visibility=public
+kind=defined
+
+--- renegotiation_cb -> nil | Proc
+
+ハンドシェイク開始時に呼び出されるコールバックを得ます。
+
+@see [[m:OpenSSL::SSL::SSLContext#renegotiation_cb=]]
+
