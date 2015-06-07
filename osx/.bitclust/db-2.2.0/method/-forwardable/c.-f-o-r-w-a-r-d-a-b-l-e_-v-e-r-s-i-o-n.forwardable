@@ -1,0 +1,8 @@
+names=FORWARDABLE_VERSION
+visibility=public
+kind=defined
+
+--- FORWARDABLE_VERSION -> "1.1.0"
+
+[[lib:forwardable]] ライブラリのバージョンを返します。
+

@@ -1,0 +1,16 @@
+names=latest_gc_info
+visibility=public
+kind=defined
+
+--- latest_gc_info(result_hash = {}) -> Hash
+--- latest_gc_info(key)              -> object
+
+最新のGCの情報を返します。
+
+@param result_hash 戻り値のためのハッシュを指定します。省略した場合は新
+                   しくハッシュを作成します。result_hash の内容は上書き
+                   されます。
+
+@param key 得られる情報から特定の情報を取得したい場合にキーを
+           [[c:Symbol]] で指定します。
+

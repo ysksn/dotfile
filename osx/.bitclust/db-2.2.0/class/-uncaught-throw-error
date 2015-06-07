@@ -1,0 +1,13 @@
+type=class
+superclass=ArgumentError
+included=
+extended=
+library=_builtin
+aliases=
+aliasof=
+
+[[m:Kernel.#throw]] に指定した tag に対して一致する
+[[m:Kernel.#catch]] が存在しない場合に発生します。
+
+   throw "foo", "bar"
+   # => (例外発生) UncaughtThrowError: uncaught throw "foo"

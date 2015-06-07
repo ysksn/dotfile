@@ -1,0 +1,11 @@
+names=page_dir
+visibility=public
+kind=defined
+
+--- page_dir -> Pathname | nil
+
+コマンドライン引数の --page-dir オプションで指定したディレクトリを返し
+ます。
+
+指定されていない場合は nil を返します。
+

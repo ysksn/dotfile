@@ -1,0 +1,24 @@
+names=start_prefix_mapping
+visibility=public
+kind=defined
+
+--- start_prefix_mapping(prefix, uri) -> ()
+名前空間の接頭辞(prefix)が導入されたときに呼び出される
+コールバックメソッドです。
+
+以下のようなXMLを処理
+  <a xmlns:foo="http://foo.example.org/">
+    <foo:b />
+  </a>
+すると
+  start_prefix_mapping("foo", "http://foo.example.org/")
+  start_element(nil, "a", "a", {"xmlns:foo" => "http://foo.example.org/"})
+    :
+  end_element(nil, "a", "a")
+  end_prefix_mapping("foo")
+の順で呼びだされます。つまり名前空間を導入した要素の start_element の前に
+start_prefix_mapping が呼びだされます。
+
+@param prefix 接頭辞の文字列が渡されます
+@param uri 接頭辞に対応する URI 文字列が渡されます
+

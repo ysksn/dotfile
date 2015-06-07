@@ -1,0 +1,27 @@
+names=max_by
+visibility=public
+kind=defined
+
+--- max_by                  -> Enumerator
+--- max_by(n)               -> Enumerator
+--- max_by {|item| ... }    -> object | nil
+--- max_by(n) {|item| ... } -> Array
+
+各要素を順番にブロックに渡して実行し、
+その評価結果を <=> で比較して、
+最大であった値に対応する元の要素、もしくは最大の n 要素を返します。
+
+引数を指定しない形式では要素が存在しなければ nil を返します。
+引数を指定する形式では、空の配列を返します。
+該当する要素が複数存在する場合、どの要素を返すかは不定です。
+
+[[m:Enumerable#max]] と [[m:Enumerable#max_by]] の
+違いは [[m:Enumerable#sort]] と [[m:Enumerable#sort_by]] の違いと同じです。
+
+ブロックを省略した場合は [[c:Enumerator]] を返します。
+
+@param n 取得する要素数。
+
+@see [[m:Enumerable#sort_by]]
+
+

@@ -1,0 +1,9 @@
+names=netmask
+visibility=public
+kind=defined
+
+--- netmask -> Addrinfo | nil
+
+self のネットマスクを [[c:Addrinfo]] オブジェクトで返します。
+self が利用できない場合は nil を返します。
+

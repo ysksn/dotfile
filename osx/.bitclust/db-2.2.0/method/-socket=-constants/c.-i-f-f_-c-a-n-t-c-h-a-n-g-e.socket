@@ -1,0 +1,7 @@
+names=IFF_CANTCHANGE
+visibility=public
+kind=defined
+
+--- IFF_CANTCHANGE
+
+flags not changeable

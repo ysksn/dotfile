@@ -1,0 +1,10 @@
+names=DEFAULT_VERSION
+visibility=public
+kind=defined
+
+--- DEFAULT_VERSION -> String
+[[m:REXML::XMLDecl.new]] や [[m:REXML::XMLDecl.default]] で
+の使われるデフォルトのXMLバージョン。
+
+
+

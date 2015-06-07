@@ -1,0 +1,11 @@
+type=class
+superclass=RDoc=Parser
+included=RDoc=Parser=Text
+extended=
+library=rdoc.parser.rd
+aliases=
+aliasof=
+
+RD 形式で記述されたファイルを解析するためのクラスです。
+
+解析された情報はコメントとして扱われます。

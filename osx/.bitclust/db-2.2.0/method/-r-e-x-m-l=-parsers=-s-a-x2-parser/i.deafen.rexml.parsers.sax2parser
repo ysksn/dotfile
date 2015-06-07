@@ -1,0 +1,12 @@
+names=deafen
+visibility=public
+kind=defined
+
+--- deafen(listener) -> ()
+
+[[m:REXML::Parsers::SAX2Parser#listen]] で指定した listener を
+取り除きます。
+
+@param listener 取り除く listener 
+
+

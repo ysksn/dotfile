@@ -1,0 +1,8 @@
+names=flags
+visibility=public
+kind=defined
+
+--- flags -> Integer
+
+self に指定された flags の値を返します。
+

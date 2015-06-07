@@ -1,0 +1,23 @@
+names=getlocal
+visibility=public
+kind=defined
+
+--- getlocal             -> Time
+--- getlocal(utc_offset) -> Time
+
+タイムゾーンを地方時に設定した Time オブジェクトを新しく生成
+して返します。
+
+@param utc_offset タイムゾーンを地方時に設定する代わりに協定世界時との
+                  時差を、秒を単位とする整数か、"+HH:MM" "-HH:MM" 形式
+                  の文字列で指定します。
+
+  t = Time.utc(2000,1,1,20,15,1)  #=> Sat Jan 01 20:15:01 UTC 2000
+  t.utc?                          #=> true
+  l = t.getlocal                  #=> Sat Jan 01 14:15:01 CST 2000
+  l.utc?                          #=> false
+  t == l                          #=> true
+  j = t.getlocal("+09:00")        #=> 2000-01-02 05:15:01 +0900
+  j.utc?                          #=> false
+  t == j                          #=> true
+

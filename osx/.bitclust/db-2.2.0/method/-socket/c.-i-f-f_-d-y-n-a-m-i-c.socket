@@ -1,0 +1,8 @@
+names=IFF_DYNAMIC
+visibility=public
+kind=defined
+
+--- IFF_DYNAMIC
+
+dialup device with changing addresses
+

@@ -1,0 +1,15 @@
+names=renew
+visibility=public
+kind=defined
+
+--- renew(sec_or_renewer) -> ()
+タプルの有効期限を更新します。
+
+sec_or_renewer によって以下のように更新されます。
+  * nil :  遠い未来(実質的に無限)を指定します。詳しくは [[m:Rinda::TupleEntry#expires]] 参照
+  * true :  直ちに有効期限切れになるよう指定します
+  * 数値 : 有効期限を現在から sec_or_renewer 秒後に指定します
+  * それ以外 : renew メソッドを持っていると仮定され、そのメソッドの呼び出し結果を用います。
+    renew メソッドは nil, true, 数値のいずれかを上のルールに従って返さなければなりません。
+
+

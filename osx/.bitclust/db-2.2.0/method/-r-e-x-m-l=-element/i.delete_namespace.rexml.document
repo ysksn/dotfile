@@ -1,0 +1,22 @@
+names=delete_namespace
+visibility=public
+kind=defined
+
+--- delete_namespace(namespace = "xmlns") -> self
+名前空間を要素から削除します。
+
+削除可能な名前空間はそのノードで宣言されているもののみです。
+上位の要素で宣言されているものは削除できません。
+
+引数を省略した場合はデフォルトの名前空間を削除します。
+
+@param namespace 削除する名前空間の prefix
+
+==== 例
+  require 'rexml/document'
+  doc = REXML::Document.new "<a xmlns:foo='bar' xmlns='twiddle'/>"
+  doc.root.delete_namespace
+  doc.to_s # => "<a xmlns:foo='bar'/>"
+  doc.root.delete_namespace 'foo'
+  doc.to_s # => "<a/>"
+

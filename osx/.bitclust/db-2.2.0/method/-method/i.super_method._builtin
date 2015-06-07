@@ -1,0 +1,8 @@
+names=super_method
+visibility=public
+kind=defined
+
+--- super_method -> Method | nil
+
+self 内で super を実行した際に実行されるメソッドを [[c:Method]] オブジェ
+クトにして返します。

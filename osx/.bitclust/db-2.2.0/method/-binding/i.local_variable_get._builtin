@@ -1,0 +1,24 @@
+names=local_variable_get
+visibility=public
+kind=defined
+
+--- local_variable_get(symbol) -> object
+
+引数 symbol で指定した名前のローカル変数に設定された値を返します。
+
+@param symbol ローカル変数名を [[c:Symbol]] オブジェクトで指定します。
+
+@raise NameError 引数 symbol で指定したローカル変数が未定義の場合に発生します。
+
+    def foo
+      a = 1
+      binding.local_variable_get(:a) # => 1
+      binding.local_variable_get(:b) # => NameError
+    end
+
+このメソッドは以下のコードの短縮形です。
+
+    binding.eval("#{symbol}")
+
+@see [[m:Binding#local_variable_set]], [[m:Binding#local_variable_defined?]]
+

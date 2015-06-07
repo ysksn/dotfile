@@ -1,0 +1,10 @@
+type=module
+superclass=
+included=
+extended=
+library=rdoc.generator
+aliases=
+aliasof=
+
+[[c:RDoc]] が解析したソースコードを [[c:RDoc::CodeObject]] のツリーから
+その他の形式に出力するためのクラスです。

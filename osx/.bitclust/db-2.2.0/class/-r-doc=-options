@@ -1,0 +1,40 @@
+type=class
+superclass=Object
+included=
+extended=
+library=rdoc.options
+aliases=
+aliasof=
+
+rdoc コマンドのオプションを解析するためのクラスです。
+
+それぞれのオプションの詳細に関しては、[[ref:lib:rdoc#usage]] を参照してくだ
+さい。
+
+
+===[a:custom_options] カスタムオプション
+
+[[c:RDoc]] のジェネレータでは、[[c:RDoc::Options]] をフックして独自の
+オプションを指定できます。
+
+[[m:Object::ARGV]] に --format が含まれていた場合、[[c:RDoc]] はジェネ
+レータ独自のオプションを解析するために setup_options メソッドを呼び出し
+ます。カスタムオプションを指定する場合は --format オプションは必ず指定
+する必要があります。rdoc --help を実行すると追加したオプションの一覧が
+確認できます。
+
+例:
+
+  class RDoc::Generator::Spellcheck
+    RDoc::RDoc.add_generator self
+
+    def self.setup_options rdoc_options
+      op = rdoc_options.option_parser
+
+      op.on('--spell-dictionary DICTIONARY',
+            RDoc::Options::Path) do |dictionary|
+        # [[c:RDoc::Options]] に spell_dictionary アクセサの定義が必要
+        rdoc_options.spell_dictionary = dictionary
+      end
+    end
+  end

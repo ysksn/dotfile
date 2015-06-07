@@ -1,0 +1,15 @@
+names=fetch
+visibility=public
+kind=defined
+
+--- fetch(key) -> object
+タプルの key に対応する要素を返します。
+
+[[m:Rinda::TupleEntry#value]].fetch(key) を返します。
+
+@param key 要素を指定するキー
+
+@see [[m:Rinda::TupleEntry#[] ]]
+
+
+

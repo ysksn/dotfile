@@ -1,0 +1,8 @@
+names=tag
+visibility=public
+kind=defined
+
+--- tag -> object
+
+[[m:Kernel.#throw]] に指定した tag を返します。
+

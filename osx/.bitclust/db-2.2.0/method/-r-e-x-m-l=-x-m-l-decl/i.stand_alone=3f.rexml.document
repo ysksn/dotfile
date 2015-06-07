@@ -1,0 +1,11 @@
+names=stand_alone?,standalone
+visibility=public
+kind=defined
+
+--- standalone -> String | nil
+--- stand_alone? -> String | nil
+スタンドアロン文書であるかどうかを "yes" "no" で
+返します。
+
+nil(省略)を返す場合もあります。
+

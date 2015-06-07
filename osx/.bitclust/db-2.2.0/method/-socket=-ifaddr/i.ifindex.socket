@@ -1,0 +1,8 @@
+names=ifindex
+visibility=public
+kind=defined
+
+--- ifindex -> Integer
+
+self のインターフェイスのインデックスを返します。
+

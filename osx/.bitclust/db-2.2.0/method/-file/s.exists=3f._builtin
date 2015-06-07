@@ -1,0 +1,8 @@
+names=exists?
+visibility=public
+kind=defined
+
+--- exists?(path)    -> bool
+
+このメソッドは deprecated です。[[m:File.exist?]] を使用してください。
+

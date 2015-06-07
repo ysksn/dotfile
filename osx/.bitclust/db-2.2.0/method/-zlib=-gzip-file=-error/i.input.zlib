@@ -1,0 +1,8 @@
+names=input
+visibility=public
+kind=defined
+
+--- input -> String | nil
+
+読み込んだ文字列(gzip 形式で圧縮されたもの)を返します。
+

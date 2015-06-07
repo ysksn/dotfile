@@ -1,0 +1,9 @@
+names=xmldecl?
+visibility=public
+kind=defined
+
+--- xmldecl? -> bool
+XML宣言なら真を返します。
+
+
+

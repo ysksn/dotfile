@@ -1,0 +1,12 @@
+names=raw=
+visibility=public
+kind=defined
+
+--- raw=(value)
+"raw" モードの設定を変更します。
+
+raw モードについては [[m:REXML::Text.new]] を参考にしてください。
+
+@param value 設定する真偽値
+@see [[m:REXML::Text#raw]]
+

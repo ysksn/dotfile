@@ -1,0 +1,19 @@
+names=local_variables
+visibility=public
+kind=defined
+
+--- local_variables -> [Symbol]
+
+ローカル変数の一覧を [[c:Symbol]] の配列で返します。
+
+    def foo
+      a = 1
+      2.times do |n|
+        binding.local_variables #=> [:a, :n]
+      end
+    end
+
+このメソッドは以下のコードと同様の動作をします。
+
+  binding.eval("local_variables")
+

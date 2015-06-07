@@ -1,0 +1,12 @@
+names=first_minor
+visibility=public
+kind=defined
+
+--- first_minor(row, column) -> Matrix
+
+self から第 row 行と第 column 列を取り除いた行列を返します。
+
+@param row 行
+@param column 列
+@raise ArgumentError row, column が行列の行数/列数を越えている場合に発生します。
+

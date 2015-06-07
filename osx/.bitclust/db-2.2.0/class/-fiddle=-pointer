@@ -1,0 +1,12 @@
+type=class
+superclass=Object
+included=
+extended=
+library=fiddle
+aliases=
+aliasof=
+
+メモリ領域を表すクラスです。C 言語のポインタに相当します。 
+
+2.2.0 で削除された dl の DL::CPtr に対応します。
+DL::CPtrとほぼ同じインターフェースを持ちます。

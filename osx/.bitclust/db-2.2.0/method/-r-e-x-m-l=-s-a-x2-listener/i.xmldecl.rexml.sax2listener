@@ -1,0 +1,11 @@
+names=xmldecl
+visibility=public
+kind=defined
+
+--- xmldecl(version, encoding, standalone) -> ()
+XML宣言に出会ったときに呼び出されるコールバックメソッドです。
+
+@param version 宣言されているバージョンが文字列で渡されます。
+@param encoding 宣言されているエンコーディングが文字列で渡されます。
+@param standalone スタンドアロン文書であるかどうかが "yes" "no" で渡されます
+

@@ -1,0 +1,8 @@
+names=sanitize_path
+visibility=public
+kind=defined
+
+--- sanitize_path(path)
+
+ライブラリ内部で使用します。
+

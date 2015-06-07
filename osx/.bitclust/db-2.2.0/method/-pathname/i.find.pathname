@@ -1,0 +1,21 @@
+names=find
+visibility=public
+kind=defined
+
+--- find(ignore_error: true)                  -> Enumerator
+--- find(ignore_error: true) {|pathname| ...} -> nil
+self 配下のすべてのファイルやディレクトリを
+一つずつ引数 pathname に渡してブロックを実行します。
+
+  require 'find'
+  Find.find(self.to_s) {|f| yield Pathname.new(f)}
+
+と同じです。
+
+ブロックを省略した場合は、上記の処理を行うような [[c:Enumerator]] を返
+します。
+
+@param ignore_error 探索中に発生した例外を無視するかどうかを指定します。
+
+@see [[m:Find.#find]]
+

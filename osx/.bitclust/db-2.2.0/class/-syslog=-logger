@@ -1,0 +1,10 @@
+type=class
+superclass=Object
+included=
+extended=
+library=syslog.logger
+aliases=
+aliasof=
+
+[[c:Logger]] のようなインターフェイスを用いて syslog にログを記録するた
+めのクラスです。

@@ -1,0 +1,8 @@
+names=exists?
+visibility=public
+kind=defined
+
+--- exists?(file)    -> bool
+
+このメソッドは deprecated です。[[m:FileTest.#exist?]] を使用してください。
+

@@ -1,0 +1,9 @@
+names=addr
+visibility=public
+kind=defined
+
+--- addr -> Addrinfo | nil
+
+self のアドレスを [[c:Addrinfo]] オブジェクトで返します。
+self が利用できない場合は nil を返します。
+

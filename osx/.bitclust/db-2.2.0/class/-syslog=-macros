@@ -1,0 +1,9 @@
+type=module
+superclass=
+included=
+extended=
+library=syslog
+aliases=
+aliasof=
+
+このモジュールには syslog のユーティリティ関数が定義されています。

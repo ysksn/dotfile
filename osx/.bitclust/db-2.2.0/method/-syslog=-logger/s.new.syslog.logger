@@ -1,0 +1,14 @@
+names=new
+visibility=public
+kind=defined
+
+--- new(program_name = 'ruby') -> Syslog::Logger
+
+[[c:Syslog::Logger]] オブジェクトを初期化します。
+
+@param program_name [[c:Logger]] との互換性のために用意されています。
+                    プログラム名を文字列で指定できますが、最初の
+                    [[c:Syslog::Logger]] の初期化時のみ、指定した値がセッ
+                    トされます(syslog の仕様で 1 つのプログラム名のみが
+                    採用されます)。
+

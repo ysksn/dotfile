@@ -1,0 +1,23 @@
+names=local_variable_defined?
+visibility=public
+kind=defined
+
+--- local_variable_defined?(symbol) -> bool
+
+引数 symbol で指定した名前のローカル変数が定義されている場合に true を、
+そうでない場合に false を返します。
+
+@param symbol ローカル変数名を [[c:Symbol]] オブジェクトで指定します。
+
+    def foo
+      a = 1
+      binding.local_variable_defined?(:a) # => true
+      binding.local_variable_defined?(:b) # => false
+    end
+
+このメソッドは以下のコードの短縮形です。
+
+    binding.eval("defined?(#{symbol}) == 'local-variable'")
+
+@see [[m:Binding#local_variable_get]], [[m:Binding#local_variable_set]]
+

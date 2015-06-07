@@ -1,0 +1,11 @@
+names=expanded_name,name
+visibility=public
+kind=defined
+
+--- expanded_name -> String
+--- name -> String
+
+""(空文字列)を返します。
+
+XMLの仕様上、このオブジェクトはexpanded name名前を持ちえません。
+

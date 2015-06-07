@@ -1,0 +1,4 @@
+.LOG_MASK	Syslog::Macros.#LOG_MASK
+.LOG_UPTO	Syslog::Macros.#LOG_UPTO
+#LOG_MASK	Syslog::Macros.#LOG_MASK
+#LOG_UPTO	Syslog::Macros.#LOG_UPTO

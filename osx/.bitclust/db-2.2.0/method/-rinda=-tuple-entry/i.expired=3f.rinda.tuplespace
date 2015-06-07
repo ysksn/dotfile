@@ -1,0 +1,8 @@
+names=expired?
+visibility=public
+kind=defined
+
+--- expired? -> bool
+タプルが既に期限切れになっているならば真を返します。
+
+@see [[m:Rinda::TupleEntry#expires]], @see [[m:Rinda::TupleEntry#renew]]

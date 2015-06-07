@@ -1,0 +1,8 @@
+names=IFF_802_1Q_VLAN
+visibility=public
+kind=defined
+
+--- IFF_802_1Q_VLAN
+
+802.1Q VLAN device
+

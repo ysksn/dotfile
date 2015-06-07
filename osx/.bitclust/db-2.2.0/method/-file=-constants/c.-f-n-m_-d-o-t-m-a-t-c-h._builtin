@@ -1,0 +1,8 @@
+names=FNM_DOTMATCH
+visibility=public
+kind=defined
+
+--- FNM_DOTMATCH -> Integer
+ワイルドカード `*', `?', `[]' が先頭の `.' にマッチするようになります。
+[[m:File.fnmatch]], [[m:Dir.glob]]で使用します。
+

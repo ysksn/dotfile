@@ -1,0 +1,8 @@
+names=name
+visibility=public
+kind=defined
+
+--- name -> String
+
+self のインターフェイス名を返します。
+

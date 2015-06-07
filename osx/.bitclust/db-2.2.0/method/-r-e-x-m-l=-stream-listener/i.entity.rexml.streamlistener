@@ -1,0 +1,20 @@
+names=entity
+visibility=public
+kind=defined
+
+--- entity(content) -> ()
+DTD内で、パラメータ実体参照(%entityname;)が現れたときに呼び出される
+コールバックメソッドです。
+
+DTDの各宣言(要素型宣言や実体参照宣言)の内側で使われた
+場合はこのメソッドはコールバックされません。
+各宣言のためのコールバックメソッド 
+([[m:REXML::StreamListener#elementdecl]] や [[m:REXML::StreamListener#entitydecl]]
+など)
+の引数の一部として渡されます。
+
+2.0.0 以前ではこのメソッドはコールバックされないことに注意してください。
+
+@param content 参照名が文字列で渡されます。
+
+

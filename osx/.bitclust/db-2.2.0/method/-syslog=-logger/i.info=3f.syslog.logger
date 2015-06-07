@@ -1,0 +1,9 @@
+names=info?
+visibility=public
+kind=defined
+
+--- info? -> bool
+
+self が INFO 以上の(syslog の info)ログレベルのメッセージを記録する場合
+に true を返します。
+

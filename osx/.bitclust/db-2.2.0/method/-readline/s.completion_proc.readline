@@ -1,0 +1,12 @@
+names=completion_proc
+visibility=public
+kind=defined
+
+--- completion_proc -> Proc
+
+ユーザからの入力を補完する時の候補を取得する [[c:Proc]] オブジェクト
+proc を取得します。
+
+
+@see [[m:Readline.completion_proc=]]
+

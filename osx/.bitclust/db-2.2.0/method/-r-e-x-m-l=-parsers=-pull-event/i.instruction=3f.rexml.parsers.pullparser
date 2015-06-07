@@ -1,0 +1,8 @@
+names=instruction?
+visibility=public
+kind=defined
+
+--- instruction? -> bool
+XML処理命令なら真を返します。
+
+

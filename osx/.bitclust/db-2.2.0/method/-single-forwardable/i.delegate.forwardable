@@ -1,0 +1,14 @@
+names=delegate,single_delegate
+visibility=public
+kind=defined
+
+--- single_delegate(hash) -> ()
+--- delegate(hash)        -> ()
+
+メソッドの委譲先を設定します。
+
+@param hash 委譲先のメソッドがキー、委譲先のオブジェクトが値の
+            [[c:Hash]] を指定します。キーは [[c:Symbol]]、
+            [[c:String]] かその配列で指定します。
+
+@see [[m:Forwardable#delegate]]

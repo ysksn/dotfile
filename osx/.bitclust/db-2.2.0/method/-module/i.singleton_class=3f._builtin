@@ -1,0 +1,14 @@
+names=singleton_class?
+visibility=private 
+kind=defined
+
+--- singleton_class? -> bool
+
+self が特異クラスの場合に true を返します。そうでなければ false を返し
+ます。
+
+  class C
+  end
+  C.singleton_class?                  # => false
+  C.singleton_class.singleton_class?  # => true
+

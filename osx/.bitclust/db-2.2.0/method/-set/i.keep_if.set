@@ -1,0 +1,10 @@
+names=keep_if
+visibility=public
+kind=defined
+
+--- keep_if {|element| ... } -> self
+
+各要素に対してブロックを評価し、その結果が偽であった要素を self から削除します。
+
+@return 常に self を返します。
+

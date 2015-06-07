@@ -1,0 +1,16 @@
+names=deflate
+visibility=public
+kind=defined
+
+--- deflate(string, level = Zlib::DEFAULT_COMPRESSION ) -> String
+
+引数 string を圧縮します。[[m:Zlib::Deflate.deflate]] と同じです。
+
+@param string 圧縮する文字列を指定します。
+@param level 圧縮の水準を詳細に指定します。
+             有効な値は [[m:Zlib::NO_COMPRESSION]],
+             [[m:Zlib::BEST_SPEED]], [[m:Zlib::BEST_COMPRESSION]],
+             [[m:Zlib::DEFAULT_COMPRESSION]] 及び 0 から 9 の整数です。
+
+@see [[m:Zlib::Deflate.deflate]]
+
