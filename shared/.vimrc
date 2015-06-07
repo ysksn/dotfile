@@ -26,36 +26,34 @@ set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 " neobundle自体をneobundleで管理
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/neosnippet'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/neocomplete'
+NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'Shougo/neocomplete'
 NeoBundle 'marijnh/tern_for_vim', {
   \ 'build': {
   \   'others': 'npm install'
   \}}
 NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make -f make_mac.mak',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
-" gem install rubocop refe2
-" bitclust setup
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'thinca/vim-ref'
-NeoBundle 'yuku-t/vim-ref-ri'
-NeoBundle 'szw/vim-tags'
+  \ 'build' : {
+  \     'windows' : 'tools\\update-dll-mingw',
+  \     'cygwin' : 'make -f make_cygwin.mak',
+  \     'mac' : 'make -f make_mac.mak',
+  \     'linux' : 'make',
+  \     'unix' : 'gmake',
+  \    },
+  \ }
 NeoBundleLazy 'vim-ruby/vim-ruby', {
   \ 'autoload' : {'filetypes' : ['ruby', 'eruby']}}
+" gem install rubocop refe2
+" bitclust setup
+NeoBundle 'thinca/vim-ref'
+NeoBundle 'yuku-t/vim-ref-ri'
 NeoBundle 'tpope/vim-rails'
 NeoBundleLazy 'tpope/vim-endwise', {
   \ 'autoload' : { 'insert' : 1,}}
