@@ -1,9 +1,0 @@
-names=event_type
-visibility=public
-kind=defined
-
---- event_type -> Symbol
-イベントの種類をシンボルで返します。
-
-詳しくは [[ref:c:REXML::Parsers::PullParser#event_type]] を参照してください。
-

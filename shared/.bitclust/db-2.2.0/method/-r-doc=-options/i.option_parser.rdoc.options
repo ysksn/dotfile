@@ -1,9 +1,0 @@
-names=option_parser
-visibility=public
-kind=defined
-
---- option_parser -> OptionParser | nil
-
-コマンドライン引数の解析のための [[c:OptionParser]] オブジェクトを返し
-ます。
-

@@ -1,9 +1,0 @@
-names=TYPE_INT
-visibility=public
-kind=defined
-
---- TYPE_INT -> Integer
-C の int 型を表します。
-
-@see [[m:Fiddle::Function.new]]
-

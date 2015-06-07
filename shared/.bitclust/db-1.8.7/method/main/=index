@@ -1,4 +1,0 @@
-.include	main.include
-.private	main.private
-.public	main.public
-.to_s	main.to_s

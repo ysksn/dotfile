@@ -1,8 +1,0 @@
-requires=
-classes=RDoc=Generator=RI
-methods=
-sublibraries=
-is_sublibrary=true
-category=
-
-ri のためのファイルを生成するためのサブライブラリです。

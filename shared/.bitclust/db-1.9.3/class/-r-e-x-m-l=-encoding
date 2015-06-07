@@ -1,9 +1,0 @@
-type=module
-superclass=
-included=
-extended=
-library=rexml.document
-aliases=
-aliasof=
-
-rexml ライブラリでエンコーディングを取り扱うための内部的なモジュールです。

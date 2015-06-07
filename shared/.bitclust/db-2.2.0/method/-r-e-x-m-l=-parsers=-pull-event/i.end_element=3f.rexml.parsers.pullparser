@@ -1,7 +1,0 @@
-names=end_element?
-visibility=public
-kind=defined
-
---- end_element? -> bool
-XML要素の終了タグなら真を返します。
-

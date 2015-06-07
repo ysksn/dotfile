@@ -1,8 +1,0 @@
-names=inspect
-visibility=public
-kind=defined
-
---- inspect -> String
-
-self のクラス名と message を文字列にして返します。
-

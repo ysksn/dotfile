@@ -1,7 +1,0 @@
-names=RUBY_FREE
-visibility=public
-kind=defined
-
---- RUBY_FREE -> Integer
-ruby_xfree の関数ポインタのアドレスの値。
-

@@ -1,7 +1,0 @@
-names=version
-visibility=public
-kind=defined
-
---- version -> String
-XML文書のバージョンを文字列で返します。
-

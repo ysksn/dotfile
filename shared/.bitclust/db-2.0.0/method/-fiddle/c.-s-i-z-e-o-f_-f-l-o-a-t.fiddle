@@ -1,7 +1,0 @@
-names=SIZEOF_FLOAT
-visibility=public
-kind=defined
-
---- SIZEOF_FLOAT -> Integer
-Cでの sizeof(float) の値
-

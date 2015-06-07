@@ -1,8 +1,0 @@
-names=NAN
-visibility=public
-kind=defined
-
---- NAN -> BigDecimal
-
-NaN を表す [[c:BigDecimal]] オブジェクトを返します。
-

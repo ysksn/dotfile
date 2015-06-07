@@ -1,7 +1,0 @@
-names=attlistdecl?
-visibility=public
-kind=defined
-
---- attlistdecl? -> bool
-DTDの属性リスト宣言なら真を返します。
-

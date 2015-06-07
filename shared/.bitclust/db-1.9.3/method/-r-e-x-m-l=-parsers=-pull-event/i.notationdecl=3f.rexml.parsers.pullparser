@@ -1,8 +1,0 @@
-names=notationdecl?
-visibility=public
-kind=defined
-
---- notationdecl? -> bool
-DTDの記法宣言なら真を返します。
-
-

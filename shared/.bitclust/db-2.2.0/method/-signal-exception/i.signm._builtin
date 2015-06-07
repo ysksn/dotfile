@@ -1,7 +1,0 @@
-names=signm
-visibility=public
-kind=defined
-
---- signm -> String
-
-self.message のエイリアスです。

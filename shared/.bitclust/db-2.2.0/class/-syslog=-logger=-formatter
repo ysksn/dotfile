@@ -1,9 +1,0 @@
-type=class
-superclass=Object
-included=
-extended=
-library=syslog.logger
-aliases=
-aliasof=
-
-[[c:Syslog::Logger]] のデフォルトのログフォーマッタクラスです。

@@ -51,8 +51,8 @@ NeoBundleLazy 'vim-ruby/vim-ruby', {
   \ 'autoload' : {'filetypes' : ['ruby', 'eruby']}}
 " gem install rubocop bitclust-core bitclust-dev refe2
 " bitclust setup --versions=2.2.0
-" mv ~/.bitclust ~/.dotfiles/shared/
-" ln -s ~/.dotfiles/shared/.bitclust ~/
+" mv ~/.bitclust ~/.dotfiles/[osx|linux]/
+" ln -s ~/.dotfiles/[osx|linux]/.bitclust ~/
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'yuku-t/vim-ref-ri'
 NeoBundle 'tpope/vim-rails'
