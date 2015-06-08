@@ -7,7 +7,7 @@ set foldmethod=indent
 set foldlevel=4
 set clipboard+=unnamed
 set clipboard+=autoselect
-set hlsearch
+set nohlsearch
 set noswapfile
 syntax enable
 " http://qiita.com/kuwana/items/d9778a9ec42a53b3aa10
