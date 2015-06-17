@@ -10,6 +10,9 @@ elif [ $OS = 'Linux' ]; then
   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
+# default editor is vim
+export EDITOR="vim"
+
 # for rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
