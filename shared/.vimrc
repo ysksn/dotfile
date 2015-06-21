@@ -4,7 +4,7 @@ set autoindent
 set expandtab
 set shiftwidth=2
 set foldmethod=indent
-set foldlevel=4
+set foldlevel=8
 set clipboard+=unnamed
 set clipboard+=autoselect
 set nohlsearch
