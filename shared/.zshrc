@@ -78,5 +78,6 @@ bindkey '^R' history-incremental-pattern-search-backward
 alias ll='ls -al'
 alias mkdir='mkdir -p'
 alias vi='vim'
+alias rz='exec zsh -l'
 
 bindkey -e
