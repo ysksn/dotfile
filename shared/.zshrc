@@ -1,5 +1,7 @@
 OS=`uname`
 if [ $OS = 'Darwin' ]; then
+  alias ctags='`brew --prefix`/bin/ctags'
+  alias sed='gsed'
   # default PATH
   export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
   # zsh-syntax-highlighting.zsh
@@ -76,5 +78,3 @@ bindkey '^R' history-incremental-pattern-search-backward
 alias ll='ls -al'
 alias mkdir='mkdir -p'
 alias vi='vim'
-alias ctags='`brew --prefix`/bin/ctags'
-alias sed='gsed'
