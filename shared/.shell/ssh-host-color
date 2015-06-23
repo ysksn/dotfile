@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# (1) copy to: ~/bin/ssh-host-color 
+# (2) set:     alias ssh=~/bin/ssh-host-color
+#
+# Inspired from http://talkfast.org/2011/01/10/ssh-host-color
+# Fork from https://gist.github.com/773849
+#
+
+if [[ "$@" =~ marketing.local ]]; then
+  printf "\033]50;SetProfile=marketing.local\007"
+elif [[ "$@" =~ liner-tool ]]; then
+  printf "\033]50;SetProfile=liner-tool\007"
+else
+  printf "\033]50;SetProfile=Default\007"
+fi
+
+ssh $@
+printf "\033]50;SetProfile=Default\007"
