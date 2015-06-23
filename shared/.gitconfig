@@ -3,7 +3,7 @@
   email = bluewhale1982@gmail.com
 [core]
   editor = vim
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/y-kabuto/.gitignore
 [web]
   browser = google-chrome
 [color]
