@@ -1,5 +1,5 @@
 uname -v | grep Ubuntu >/dev/null 2>&1
-if [ ! $? ]; then
+if [ $? -ne 0 ]; then
   OS=`uname`
   if [ $OS = 'Darwin' ]; then
     alias ctags='`brew --prefix`/bin/ctags'
@@ -13,7 +13,6 @@ if [ ! $? ]; then
   elif [ $OS = 'Linux' ]; then
     source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   fi
-
   # for rbenv
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init - zsh)"
