@@ -9,8 +9,12 @@
 
 if [[ "$@" =~ marketing.local ]]; then
   printf "\033]50;SetProfile=marketing.local\007"
-elif [[ "$@" =~ liner-tool ]]; then
-  printf "\033]50;SetProfile=liner-tool\007"
+elif [[ "$@" =~ liner-tool.local ]]; then
+  printf "\033]50;SetProfile=liner-tool.local\007"
+elif [[ "$@" =~ s1.liner.jp ]]; then
+  printf "\033]50;SetProfile=s1.liner.jp\007"
+elif [[ "$@" =~ app-server ]]; then
+  printf "\033]50;SetProfile=app-server\007"
 else
   printf "\033]50;SetProfile=Default\007"
 fi

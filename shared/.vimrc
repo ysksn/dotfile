@@ -1,4 +1,4 @@
-colorscheme elflord
+colorscheme koehler
 set tabstop=2
 set autoindent
 set expandtab
