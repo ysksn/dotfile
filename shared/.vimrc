@@ -1,10 +1,12 @@
+set modeline
+set foldmethod=marker
+set foldmarker=----------FoldFromHere,----------FoldEndHere
+set commentstring=###%s
 colorscheme koehler
 set tabstop=2
 set autoindent
 set expandtab
 set shiftwidth=2
-set foldmethod=indent
-set foldlevel=8
 set clipboard+=unnamed
 set clipboard+=autoselect
 set nohlsearch
@@ -247,3 +249,8 @@ call submode#map('movepane', 'n', '', 'l', '<C-w>l')
 call submode#map('movepane', 'n', '', 'h', '<C-w>h')
 call submode#map('movepane', 'n', '', 'k', '<C-w>k')
 call submode#map('movepane', 'n', '', 'j', '<C-w>j')
+let g:submode_always_show_submode = 0
+let g:submode_keep_leaving_key = 0
+let g:submode_timeout = 0
+let g:submode_timeoutlen = 1
+let g:submode_leave_with_key = 1
