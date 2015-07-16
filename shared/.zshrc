@@ -88,7 +88,20 @@ bindkey '^R' history-incremental-pattern-search-backward
 
 alias ll='ls -al'
 alias mkdir='mkdir -p'
-alias vi='vim'
 alias rz='exec zsh -l'
 alias ssh='~/.shell/ssh-host-color'
+alias vi='vim'
+
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit -m'
+alias gch='git checkout'
+alias gd='git diff'
+alias gf='git fetch'
+alias gl='git log'
+alias gm='git merge --no-ff -m'
+alias gp='git pull --rebase'
+alias gr='git reset'
+alias gs='git status'
+
 bindkey -e
