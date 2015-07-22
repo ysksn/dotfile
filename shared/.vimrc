@@ -167,11 +167,11 @@ endif
 " Start NERDTree Settings.
 "--------------------------------------------------------------------
 " <C-e>でNERDTreeをオンオフ いつでもどこでも
-nmap <silent> <C-e>      :NERDTreeToggle<CR>
-vmap <silent> <C-e> <Esc>:NERDTreeToggle<CR>
-omap <silent> <C-e>      :NERDTreeToggle<CR>
-imap <silent> <C-e> <Esc>:NERDTreeToggle<CR>
-cmap <silent> <C-e> <C-u>:NERDTreeToggle<CR>
+nmap <silent> <C-x>      :NERDTreeToggle<CR>
+vmap <silent> <C-x> <Esc>:NERDTreeToggle<CR>
+omap <silent> <C-x>      :NERDTreeToggle<CR>
+imap <silent> <C-x> <Esc>:NERDTreeToggle<CR>
+cmap <silent> <C-x> <C-u>:NERDTreeToggle<CR>
 " 引数なしでvimを開いたらNERDTreeを起動、
 " 引数ありならNERDTreeは起動しない、引数で渡されたファイルを開く
 autocmd vimenter * if !argc() | NERDTree | endif
