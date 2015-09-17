@@ -15,6 +15,8 @@ elif [[ "$@" =~ s1.liner.jp ]]; then
   printf "\033]50;SetProfile=s1.liner.jp\007"
 elif [[ "$@" =~ granhair ]]; then
   printf "\033]50;SetProfile=granhair\007"
+elif [[ "$@" =~ kodomall ]]; then
+  printf "\033]50;SetProfile=granhair\007"
 else
   printf "\033]50;SetProfile=Default\007"
 fi
