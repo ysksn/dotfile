@@ -82,7 +82,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 ########################################
 # エイリアス
 
-alias ll='ls -al'
+alias ll='ls -alF'
 alias mkdir='mkdir -p'
 alias rz='exec zsh -l'
 alias ssh='~/.shell/ssh-host-color'
