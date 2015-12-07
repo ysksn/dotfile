@@ -8,11 +8,21 @@ if [ $OS = 'Darwin' ]; then
   source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   # zsh-completions
   fpath=(/usr/local/share/zsh-completions $fpath)
+
+  # alias for OSX
+  alias ssh='~/.shell/ssh-host-color'
 fi
+
+# for nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 # for rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh)"
+eval "$(rbenv init -)"
+
+# for rbenv plugins
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # 補完
 # 補完機能を有効にする
@@ -85,7 +95,6 @@ bindkey '^R' history-incremental-pattern-search-backward
 alias ll='ls -alF'
 alias mkdir='mkdir -p'
 alias rz='exec zsh -l'
-alias ssh='~/.shell/ssh-host-color'
 alias vi='vim'
 
 alias ga='git add'
