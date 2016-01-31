@@ -35,7 +35,6 @@ NeoBundle 'tyru/open-browser.vim'
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplete'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'mattn/emmet-vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'marijnh/tern_for_vim', {
   \ 'build': {
