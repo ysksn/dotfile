@@ -13,6 +13,10 @@ if [ $OS = 'Darwin' ]; then
   alias ssh='~/.shell/ssh-host-color'
 fi
 
+if [ $OS = 'Linux' ]; then
+  xset r rate 200 80
+fi
+
 # for nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
@@ -112,3 +116,6 @@ alias gr='git reset'
 alias gs='git status'
 
 bindkey -e
+
+# for gvm
+[[ -s "/home/y-kabuto/.gvm/scripts/gvm" ]] && source "/home/y-kabuto/.gvm/scripts/gvm"
