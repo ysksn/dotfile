@@ -35,7 +35,6 @@ NeoBundle 'tyru/open-browser.vim'
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplete'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'mattn/emmet-vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'marijnh/tern_for_vim', {
   \ 'build': {
@@ -212,7 +211,7 @@ endif
 "--------------------------------------------------------------------
 " syntastic_mode_mapをactiveにするとバッファ保存時にsyntasticが走る
 " active_filetypesに、保存時にsyntasticを走らせるファイルタイプを指定する
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby'] }
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby', 'javascript'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_check_on_open = 0
 "--------------------------------------------------------------------
