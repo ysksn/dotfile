@@ -96,6 +96,11 @@ bindkey '^R' history-incremental-pattern-search-backward
 ########################################
 # エイリアス
 
+if [ $OS = 'Linux' ]; then
+  alias pbcopy='xclip -selection clipboard'
+  alias pbpaste='xclip -selection clipboard -o'
+fi
+
 alias ll='ls -alF'
 alias mkdir='mkdir -p'
 alias rz='exec zsh -l'
