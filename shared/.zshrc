@@ -13,6 +13,10 @@ if [ $OS = 'Darwin' ]; then
   alias ssh='~/.shell/ssh-host-color'
 fi
 
+if [ $OS = 'Linux' ]; then
+  xset r rate 200 80
+fi
+
 # for nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
@@ -92,6 +96,11 @@ bindkey '^R' history-incremental-pattern-search-backward
 ########################################
 # エイリアス
 
+if [ $OS = 'Linux' ]; then
+  alias pbcopy='xclip -selection clipboard'
+  alias pbpaste='xclip -selection clipboard -o'
+fi
+
 alias ll='ls -alF'
 alias mkdir='mkdir -p'
 alias rz='exec zsh -l'
@@ -112,3 +121,6 @@ alias gr='git reset'
 alias gs='git status'
 
 bindkey -e
+
+# for gvm
+[[ -s "/home/y-kabuto/.gvm/scripts/gvm" ]] && source "/home/y-kabuto/.gvm/scripts/gvm"
