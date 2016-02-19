@@ -28,6 +28,8 @@ set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 " neobundle自体をneobundleで管理
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'kana/vim-submode'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
@@ -253,3 +255,10 @@ let g:submode_keep_leaving_key = 0
 let g:submode_timeout = 0
 let g:submode_timeoutlen = 1
 let g:submode_leave_with_key = 1
+
+"--------------------------------------------------------------------
+" vim-airline plugins
+"--------------------------------------------------------------------
+function! AirLineInit()
+  let g:airline#extensions#tabline#enabled = 1
+endfunction
