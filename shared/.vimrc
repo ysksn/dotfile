@@ -262,3 +262,9 @@ let g:submode_leave_with_key = 1
 function! AirLineInit()
   let g:airline#extensions#tabline#enabled = 1
 endfunction
+
+"--------------------------------------------------------------------
+" previm
+"--------------------------------------------------------------------
+au BufRead,BufNewFile *.md set filetype=markdown
+let g:previm_open_cmd = 'google-chrome'
