@@ -1,3 +1,4 @@
+set number
 set modeline
 set foldmethod=marker
 set foldmarker=----------FoldFromHere,----------FoldEndHere
