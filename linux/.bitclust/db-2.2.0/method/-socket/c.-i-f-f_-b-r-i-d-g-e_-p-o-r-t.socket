@@ -1,8 +1,0 @@
-names=IFF_BRIDGE_PORT
-visibility=public
-kind=defined
-
---- IFF_BRIDGE_PORT
-
-device used as bridge port
-

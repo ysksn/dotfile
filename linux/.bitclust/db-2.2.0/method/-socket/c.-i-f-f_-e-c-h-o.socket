@@ -1,8 +1,0 @@
-names=IFF_ECHO
-visibility=public
-kind=defined
-
---- IFF_ECHO
-
-echo sent packets
-

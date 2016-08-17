@@ -1,9 +1,0 @@
-names=DEFAULT
-visibility=public
-kind=defined
-
---- DEFAULT -> Integer
-デフォルトの呼出規約を表します。
-
-@see [[m:Fiddle::Function.new]]
-

@@ -1,8 +1,0 @@
-names=IFF_LOWER_UP
-visibility=public
-kind=defined
-
---- IFF_LOWER_UP
-
-driver signals L1 up
-

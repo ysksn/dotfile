@@ -1,9 +1,0 @@
-names=DEPRECATED
-visibility=public
-kind=defined
-
---- DEPRECATED -> {String -> String}
-
-非推奨のオプションの一覧を返します。
-
-

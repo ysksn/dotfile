@@ -1,8 +1,0 @@
-names=IFF_BROADCAST
-visibility=public
-kind=defined
-
---- IFF_BROADCAST
-
-broadcast address valid
-

@@ -1,8 +1,0 @@
-names=value
-visibility=public
-kind=defined
-
---- value -> Array | Hash
-管理対象のタプルを返します。
-
-

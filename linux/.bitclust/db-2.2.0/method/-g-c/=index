@@ -1,9 +1,0 @@
-.count	GC.count
-.disable	GC.disable
-.enable	GC.enable
-.latest_gc_info	GC.latest_gc_info
-.start	GC.start
-.stat	GC.stat
-.stress	GC.stress
-.stress=	GC.stress
-#garbage_collect	GC#garbage_collect

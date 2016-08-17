@@ -1,9 +1,0 @@
-names=row_count,row_size
-visibility=public
-kind=defined
-
---- row_size -> Fixnum
---- row_count -> Fixnum
-
-行列の行数を返します。
-

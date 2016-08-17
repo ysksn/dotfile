@@ -1,8 +1,0 @@
-names=zero?
-visibility=public
-kind=defined
-
---- zero? -> bool
-行列が零行列ならば真を返します。
-
-

@@ -1,9 +1,0 @@
-type=class
-superclass=Object
-included=ERB=Util
-extended=
-library=rdoc.generator.darkfish
-aliases=
-aliasof=
-
-HTML を生成するためのクラスです。

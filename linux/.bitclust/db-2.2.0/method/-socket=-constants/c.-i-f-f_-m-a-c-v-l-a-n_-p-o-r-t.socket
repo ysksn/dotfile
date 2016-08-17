@@ -1,8 +1,0 @@
-names=IFF_MACVLAN_PORT
-visibility=public
-kind=defined
-
---- IFF_MACVLAN_PORT
-
-device used as macvlan port
-

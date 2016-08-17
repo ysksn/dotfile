@@ -1,9 +1,0 @@
-type=class
-superclass=Data
-included=
-extended=
-library=socket
-aliases=
-aliasof=
-
-[[man:getifaddrs(3)]] の結果を表すクラスです。

@@ -1,8 +1,0 @@
-names=value
-visibility=public
-kind=defined
-
---- value -> object
-
-[[m:Kernel.#throw]] に指定した value を返します。
-

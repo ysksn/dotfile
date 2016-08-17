@@ -1,8 +1,0 @@
-names=IFF_MASTER_ARPMON
-visibility=public
-kind=defined
-
---- IFF_MASTER_ARPMON
-
-bonding master, ARP mon in use
-

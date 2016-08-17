@@ -1,9 +1,0 @@
-names=-@
-visibility=public
-kind=defined
-
---- -@ -> Matrix
-
-単項 -。各要素の符号を反転させた行列を返します。
-
-

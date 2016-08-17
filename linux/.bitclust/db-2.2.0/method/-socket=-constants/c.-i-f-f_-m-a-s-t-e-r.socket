@@ -1,8 +1,0 @@
-names=IFF_MASTER
-visibility=public
-kind=defined
-
---- IFF_MASTER
-
-master of a load balancer
-

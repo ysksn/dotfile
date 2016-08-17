@@ -1,8 +1,0 @@
-names=IFF_PORTSEL
-visibility=public
-kind=defined
-
---- IFF_PORTSEL
-
-can set media type
-

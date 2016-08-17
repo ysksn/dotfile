@@ -1,8 +1,0 @@
-names=IFF_POINTOPOINT
-visibility=public
-kind=defined
-
---- IFF_POINTOPOINT
-
-point-to-point link
-

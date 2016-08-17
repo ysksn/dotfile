@@ -1,9 +1,0 @@
-type=class
-superclass=Object
-included=
-extended=
-library=rexml.parsers.streamparser
-aliases=
-aliasof=
-
-ストリーム式の XML パーサクラス。
