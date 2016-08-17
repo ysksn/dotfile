@@ -1,7 +1,0 @@
-names=WINDOWS
-visibility=public
-kind=defined
-
---- WINDOWS -> bool
-Windows 上ならば真です。
-

@@ -1,7 +1,0 @@
-names=to_s
-visibility=public
-kind=defined
-
---- to_s -> String
-
-self を tag を含む文字列表現にして返します。

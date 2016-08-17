@@ -1,8 +1,0 @@
-names=IFF_ALTPHYS
-visibility=public
-kind=defined
-
---- IFF_ALTPHYS
-
-use alternate physical connection
-

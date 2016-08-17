@@ -1,9 +1,0 @@
-names=handler
-visibility=public
-kind=defined
-
---- handler -> Psych::Handler
-セットされているイベントハンドラを返します。
-
-@see [[m:Psych::Parser#handler=]]
-

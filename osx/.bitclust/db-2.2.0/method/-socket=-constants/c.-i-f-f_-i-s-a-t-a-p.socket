@@ -1,8 +1,0 @@
-names=IFF_ISATAP
-visibility=public
-kind=defined
-
---- IFF_ISATAP
-
-ISATAP interface (RFC4214)
-

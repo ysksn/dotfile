@@ -1,8 +1,0 @@
-names=IFF_SLAVE_INACTIVE
-visibility=public
-kind=defined
-
---- IFF_SLAVE_INACTIVE
-
-bonding slave not the curr. active
-

@@ -1,8 +1,0 @@
-names=start_element?
-visibility=public
-kind=defined
-
---- start_element? -> bool
-XML要素の開始タグなら真を返します。
-
-

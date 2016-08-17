@@ -1,8 +1,0 @@
-names=IFF_SLAVE
-visibility=public
-kind=defined
-
---- IFF_SLAVE
-
-slave of a load balancer
-
