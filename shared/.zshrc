@@ -13,10 +13,6 @@ if [ $OS = 'Darwin' ]; then
   alias ssh='~/.shell/ssh-host-color'
 fi
 
-if [ $OS = 'Linux' ]; then
-  xset r rate 200 80
-fi
-
 # for nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
@@ -30,9 +26,7 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # 補完
 # 補完機能を有効にする
-plugins+=(zsh-completions)
-autoload -U compinit
-compinit
+fpath=($HOME/.zsh/plugins/zsh-completions/src $fpath)
 
 # default editor is vim
 export EDITOR="vim"
