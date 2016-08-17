@@ -1,0 +1,2 @@
+# Make CapsLk Ctrl
+setxkbmap -option ctrl:swapcaps
