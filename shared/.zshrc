@@ -95,7 +95,7 @@ if [ $OS = 'Linux' ]; then
   alias pbpaste='xclip -selection clipboard -o'
 fi
 
-alias ll='ls -alF'
+alias ll='ls -alF --group-directories-first'
 alias mkdir='mkdir -p'
 alias rz='exec zsh -l'
 alias vi='vim'
