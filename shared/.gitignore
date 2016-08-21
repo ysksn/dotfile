@@ -3,3 +3,4 @@ tags
 vendor/
 *.swp
 *.swo
+dump.rdb
