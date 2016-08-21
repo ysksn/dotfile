@@ -31,6 +31,10 @@ fpath=($HOME/.zsh/plugins/zsh-completions/src $fpath)
 # default editor is vim
 export EDITOR="vim"
 
+# for developing locari
+export LOCAL_DB_HOST=127.0.0.1
+export LOCAL_REDIS_HOST=127.0.0.1
+
 # LC
 export LANG=ja_JP.UTF-8
 export LC_MESSAGES=en_US.UTF-8
