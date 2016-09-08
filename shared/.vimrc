@@ -1,3 +1,4 @@
+set paste
 set number
 set modeline
 set foldmethod=marker
