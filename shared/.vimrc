@@ -1,4 +1,3 @@
-set paste
 set number
 set modeline
 set foldmethod=marker
@@ -7,13 +6,13 @@ set commentstring=###%s
 colorscheme koehler
 set tabstop=2
 set autoindent
+set smartindent
 set expandtab
 set shiftwidth=2
 set clipboard+=unnamed
 set clipboard+=autoselect
 set nohlsearch
 set noswapfile
-set binary noeol
 syntax enable
 " http://qiita.com/kuwana/items/d9778a9ec42a53b3aa10
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
