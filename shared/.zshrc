@@ -118,6 +118,7 @@ alias gm='git merge --no-ff'
 alias gp='git pull --rebase'
 alias gr='git reset'
 alias gs='git status'
+alias gsl='git stash list'
 
 bindkey -e
 
