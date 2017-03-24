@@ -175,10 +175,10 @@ nmap <silent> <C-x>      :NERDTreeToggle<CR>
 vmap <silent> <C-x> <Esc>:NERDTreeToggle<CR>
 omap <silent> <C-x>      :NERDTreeToggle<CR>
 imap <silent> <C-x> <Esc>:NERDTreeToggle<CR>
-cmap <silent> <C-x> <C-u>:NERDTreeToggle<CR>
+" cmap <silent> <C-x> <C-u>:NERDTreeToggle<CR> # Fix: ctags
 " 引数なしでvimを開いたらNERDTreeを起動、
 " 引数ありならNERDTreeは起動しない、引数で渡されたファイルを開く
-autocmd vimenter * if !argc() | NERDTree | endif
+" autocmd vimenter * if !argc() | NERDTree | endif
 " 他のバッファをすべて閉じた時にNERDTreeが開いていたらNERDTreeも一緒に閉じる
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " 無視するファイルを設定する
