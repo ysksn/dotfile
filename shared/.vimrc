@@ -14,10 +14,6 @@ set clipboard+=autoselect
 set nohlsearch
 set noswapfile
 syntax enable
-" http://qiita.com/kuwana/items/d9778a9ec42a53b3aa10
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap [<Enter> []<Left><CR><ESC><S-o>
-inoremap (<Enter> ()<Left><CR><ESC><S-o>)]}
 au BufRead,BufNewFile *.md set filetype=markdown
 
 "----------------------------------------------------------------------
@@ -31,16 +27,15 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 " neobundle自体をneobundleで管理
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'cohama/lexima.vim'
+NeoBundle 'isRuslan/vim-es6'
 NeoBundle 'mxw/vim-jsx'
-NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'kana/vim-submode'
-NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'
-NeoBundle 'tyru/open-browser.vim'
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplete'
 NeoBundle 'scrooloose/nerdtree'
