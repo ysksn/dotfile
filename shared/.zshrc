@@ -1,5 +1,6 @@
 # Stack
 export PATH="$HOME/.local/bin:$PATH"
+eval "$(stack --bash-completion-script stack)"
 
 # direnv
 eval "$(direnv hook zsh)"
