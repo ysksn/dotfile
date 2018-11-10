@@ -1,5 +1,11 @@
+# Stack
+export PATH="$HOME/.local/bin:$PATH"
+
 # direnv
 eval "$(direnv hook zsh)"
+
+# Android Studio
+export PATH="$PATH:/usr/local/android-studio/bin"
 
 # yarn
 export PATH="$PATH:`yarn global bin`"
