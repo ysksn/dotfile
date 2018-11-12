@@ -1,7 +1,3 @@
-# Stack
-export PATH="$HOME/.local/bin:$PATH"
-eval "$(stack --bash-completion-script stack)"
-
 # direnv
 eval "$(direnv hook zsh)"
 
@@ -130,6 +126,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #################### END oh-my-zsh setting ####################
+
+# Stack (this depends on oh-my-zsh)
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(stack --bash-completion-script stack)"
 
 # aliases
 alias pbcopy='xclip -selection clipboard'
