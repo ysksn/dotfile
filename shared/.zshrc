@@ -1,16 +1,17 @@
-# direnv
-eval "$(direnv hook zsh)"
+OS=`uname`
 
-# Android Studio
-export PATH="$PATH:/usr/local/android-studio/bin"
-
-# yarn
-export PATH="$PATH:`yarn global bin`"
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+if [ $OS = 'Linux' ]; then
+  # direnv
+  eval "$(direnv hook zsh)"
+  # Android Studio
+  export PATH="$PATH:/usr/local/android-studio/bin"
+  # yarn
+  export PATH="$PATH:`yarn global bin`"
+  # nvm
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -44,7 +45,7 @@ bindkey -e
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ysksn/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -93,7 +94,20 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws bundler capistrano docker gem git rails redis-cli tmux)
+plugins=(
+  aws
+  bundler
+  capistrano
+  docker
+  gem
+  git
+  rails
+  redis-cli
+  tmux
+  zsh-completions
+)
+
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,15 +141,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #################### END oh-my-zsh setting ####################
 
-# Stack (this depends on oh-my-zsh)
-export PATH="$HOME/.local/bin:$PATH"
-eval "$(stack --bash-completion-script stack)"
+if [ $OS = 'Linux' ]; then
+  # Stack (this depends on oh-my-zsh)
+  export PATH="$HOME/.local/bin:$PATH"
+  eval "$(stack --bash-completion-script stack)"
+  # aliases
+  alias pbcopy='xclip -selection clipboard'
+  alias pbpaste='xclip -selection clipboard -o'
+fi
 
-# aliases
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
-
-alias ll='ls -alF --group-directories-first'
+alias ll='ls -alF'
 alias mkdir='mkdir -p'
 alias rz='exec zsh -l'
 alias vi='vim'
