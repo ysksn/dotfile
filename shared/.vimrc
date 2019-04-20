@@ -26,6 +26,7 @@ set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 " neobundle自体をneobundleで管理
+NeoBundle 'posva/vim-vue'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'cohama/lexima.vim'
 NeoBundle 'isRuslan/vim-es6'
@@ -271,4 +272,5 @@ let g:previm_open_cmd = 'google-chrome'
 "--------------------------------------------------------------------
 " ctrlp.vim
 "--------------------------------------------------------------------
-let g:ctrlp_max_files = 3000
+let g:ctrlp_max_files = 70000
+let g:ctrlp_max_depth = 40

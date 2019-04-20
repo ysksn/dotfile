@@ -9,10 +9,20 @@
   "author": "Yosuke Kabuto",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^3.14.0",
+    "@vue/cli-plugin-eslint": "^3.5.1",
+    "eslint": "^5.15.2",
     "eslint-config-airbnb": "^14.0.0",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
-    "eslint-plugin-react": "^6.9.0"
+    "eslint-plugin-react": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^6.0.0",
+    "gulp-watch": "^5.0.1",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.0.1",
+    "vue": "^2.6.9"
   }
 }
