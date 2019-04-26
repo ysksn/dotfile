@@ -271,4 +271,5 @@ let g:previm_open_cmd = 'google-chrome'
 "--------------------------------------------------------------------
 " ctrlp.vim
 "--------------------------------------------------------------------
-let g:ctrlp_max_files = 3000
+let g:ctrlp_max_files = 10000
+let g:ctrlp_max_depth = 12
