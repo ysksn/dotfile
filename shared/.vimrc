@@ -26,6 +26,7 @@ set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 " neobundle自体をneobundleで管理
+NeoBundle 'posva/vim-vue'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'cohama/lexima.vim'
 NeoBundle 'isRuslan/vim-es6'
