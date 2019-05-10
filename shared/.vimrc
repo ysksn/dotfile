@@ -3,7 +3,7 @@ set modeline
 set foldmethod=marker
 set foldmarker=----------FoldFromHere,----------FoldEndHere
 set commentstring=###%s
-colorscheme koehler
+colorscheme slate
 set tabstop=2
 set autoindent
 set smartindent
@@ -13,6 +13,7 @@ set clipboard+=unnamed
 set clipboard+=autoselect
 set nohlsearch
 set noswapfile
+set maxmempattern=3000
 syntax enable
 au BufRead,BufNewFile *.md set filetype=markdown
 
