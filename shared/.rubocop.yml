@@ -1,0 +1,23 @@
+Rails:
+  Enabled: true
+
+Metrics/AbcSize:
+  Max: 50
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Max: 12
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 30
+
+Style/CommentedKeyword:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

@@ -170,3 +170,4 @@ alias gp='git pull --rebase'
 alias gr='git reset'
 alias gs='git status'
 alias gsl='git stash list'
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
