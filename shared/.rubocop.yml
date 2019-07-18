@@ -24,3 +24,6 @@ Style/CommentedKeyword:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
