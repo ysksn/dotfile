@@ -218,6 +218,10 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby', 'ja
 let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+" rubocop syntax check
+" nnoremap <F8> :SyntasticCheck<CR>
+nnoremap <F9> :SyntasticToggleMode<CR>
 "--------------------------------------------------------------------
 " vim-ruby
 "--------------------------------------------------------------------

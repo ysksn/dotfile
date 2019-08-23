@@ -19,7 +19,20 @@ Metrics/LineLength:
 Metrics/MethodLength:
   Max: 30
 
+Naming/UncommunicativeMethodParamName:
+  AllowedNames:
+    - c
+    - i
+    - n
+    - id
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 Style/CommentedKeyword:
+  Enabled: false
+
+Style/Documentation:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
