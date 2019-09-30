@@ -10,6 +10,9 @@ Metrics/AbcSize:
 Metrics/BlockLength:
   Enabled: false
 
+Metrics/BlockNesting:
+  Max: 5
+
 Metrics/CyclomaticComplexity:
   Max: 12
 
@@ -25,6 +28,10 @@ Naming/UncommunicativeMethodParamName:
     - i
     - n
     - id
+    - q
+
+Style/AsciiComments:
+  Enabled: false
 
 Style/ClassAndModuleChildren:
   Enabled: false
@@ -39,4 +46,7 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/NumericLiterals:
+  Enabled: false
+
+Style/PerlBackrefs:
   Enabled: false
