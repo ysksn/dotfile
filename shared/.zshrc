@@ -145,7 +145,6 @@ source $ZSH/oh-my-zsh.sh
 if [ $OS = 'Linux' ]; then
   # Stack (this depends on oh-my-zsh)
   export PATH="$HOME/.local/bin:$PATH"
-  eval "$(stack --bash-completion-script stack)"
   # aliases
   alias pbcopy='xclip -selection clipboard'
   alias pbpaste='xclip -selection clipboard -o'

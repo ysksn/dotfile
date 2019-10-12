@@ -1,3 +1,56 @@
+"----------------------------------------------------------------------
+" Start dein Settings.
+"----------------------------------------------------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+=/home/ysksn/.cache/dein/repos/github.com/Shougo/dein.vim
+
+" Required:
+if dein#load_state('/home/ysksn/.cache/dein')
+  call dein#begin('/home/ysksn/.cache/dein')
+
+  " Let dein manage dein
+  " Required:
+  call dein#add('/home/ysksn/.cache/dein/repos/github.com/Shougo/dein.vim')
+
+
+  call dein#add('Shougo/vimproc.vim', { 'build' : 'make' })
+  call dein#add('cohama/lexima.vim')
+  call dein#add('isRuslan/vim-es6')
+  call dein#add('ctrlpvim/ctrlp.vim')
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('kchmck/vim-coffee-script')
+  call dein#add('kana/vim-submode')
+  call dein#add('kannokanno/previm')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('scrooloose/syntastic')
+  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('roxma/nvim-yarp')
+  call dein#add('roxma/vim-hug-neovim-rpc')
+	let g:deoplete#enable_at_startup = 1
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+
+"----------------------------------------------------------------------
+" End dein Settings.
+"----------------------------------------------------------------------
+
 set number
 set modeline
 set foldmethod=marker
@@ -17,154 +70,6 @@ set maxmempattern=3000
 syntax enable
 au BufRead,BufNewFile *.md set filetype=markdown
 
-"----------------------------------------------------------------------
-" Start Neobundle Settings.
-"----------------------------------------------------------------------
-" bundleで管理するディレクトリを指定
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" neobundle自体をneobundleで管理
-NeoBundle 'posva/vim-vue'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'cohama/lexima.vim'
-NeoBundle 'isRuslan/vim-es6'
-NeoBundle 'mxw/vim-jsx'
-NeoBundle 'slim-template/vim-slim'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'vim-airline/vim-airline'
-NeoBundle 'vim-airline/vim-airline-themes'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'kana/vim-submode'
-NeoBundle 'kannokanno/previm'
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/neocomplete'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'Shougo/vimproc.vim', {
-  \ 'build' : {
-  \     'windows' : 'tools\\update-dll-mingw',
-  \     'cygwin' : 'make -f make_cygwin.mak',
-  \     'mac' : 'make -f make_mac.mak',
-  \     'linux' : 'make',
-  \     'unix' : 'gmake',
-  \    },
-  \ }
-NeoBundleLazy 'vim-ruby/vim-ruby', {
-  \ 'autoload' : {'filetypes' : ['ruby', 'eruby']}}
-" gem install rubocop bitclust-core bitclust-dev refe2
-" bitclust setup --versions=2.2.0
-" mv ~/.bitclust ~/.dotfiles/[osx|linux]/
-" ln -s ~/.dotfiles/[osx|linux]/.bitclust ~/
-NeoBundle 'thinca/vim-ref'
-NeoBundle 'yuku-t/vim-ref-ri'
-NeoBundle 'tpope/vim-rails'
-NeoBundleLazy 'tpope/vim-endwise', {
-  \ 'autoload' : { 'insert' : 1,}}
-" vim-autoclose conflicts neocomplete
-"NeoBundle 'Townk/vim-autoclose'
-" 今後このあたりに追加のプラグインをどんどん書いて行きます！！"
-
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" 未インストールのプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定
-" 毎回聞かれると邪魔な場合もあるので、この設定は任意です。
-NeoBundleCheck
-
-"--------------------------------------------------------------------
-" End Neobundle Settings.
-"--------------------------------------------------------------------
-"
-"--------------------------------------------------------------------
-" neocomplete.vim Configuration Examples from
-" https://github.com/Shougo/neocomplete.vim
-" Start neocomplete Settings.
-"--------------------------------------------------------------------
-"
-"Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
-" Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
-" Use neocomplete.
-let g:neocomplete#enable_at_startup = 1
-" Use smartcase.
-let g:neocomplete#enable_smart_case = 1
-" Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-
-" Define dictionary.
-let g:neocomplete#sources#dictionary#dictionaries = {
-    \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
-        \ }
-
-" Define keyword.
-if !exists('g:neocomplete#keyword_patterns')
-    let g:neocomplete#keyword_patterns = {}
-endif
-let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-
-" Plugin key-mappings.
-inoremap <expr><C-g>     neocomplete#undo_completion()
-inoremap <expr><C-l>     neocomplete#complete_common_string()
-
-" Recommended key-mappings.
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-  return neocomplete#close_popup() . "\<CR>"
-  " For no inserting <CR> key.
-  "return pumvisible() ? neocomplete#close_popup() : "\<CR>"
-endfunction
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y>  neocomplete#close_popup()
-inoremap <expr><C-e>  neocomplete#cancel_popup()
-" Close popup by <Space>.
-inoremap <expr><Space> pumvisible() ? neocomplete#close_popup()."\<Space>" : "\<Space>"
-
-" For cursor moving in insert mode(Not recommended)
-" inoremap <C-j> <Down>
-" inoremap <C-k> <Up>
-" inoremap <C-h> <Left>
-" inoremap <C-l> <Right>
-
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-"autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType javascript setlocal omnifunc=tern#Complete
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
-
-" Enable heavy omni completion.
-if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
-  " For perlomni.vim setting. https://github.com/c9s/perlomni.vim
-  let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-endif
-
-if !exists('g:neocomplete#force_omni_input_patterns')
-  let g:neocomplete#force_omni_input_patterns = {}
-  let g:neocomplete#force_omni_input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
-endif
-"let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-"let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-
-"--------------------------------------------------------------------
-" End neocomplete Settings.
-"--------------------------------------------------------------------
 "--------------------------------------------------------------------
 " Start NERDTree Settings.
 "--------------------------------------------------------------------
@@ -214,13 +119,21 @@ endif
 "--------------------------------------------------------------------
 " syntastic_mode_mapをactiveにするとバッファ保存時にsyntasticが走る
 " active_filetypesに、保存時にsyntasticを走らせるファイルタイプを指定する
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby', 'javascript'] }
+" let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby', 'javascript'] }
+" let g:syntastic_ruby_checkers = ['rubocop']
+" let g:syntastic_javascript_checkers=['eslint']
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 1
+" " rubocop syntax check
+" " nnoremap <F8> :SyntasticCheck<CR>
+" nnoremap <F9> :SyntasticToggleMode<CR>
+let g:syntastic_mode_map = { 'mode': 'passive', 'passive_filetypes': ['ruby', 'javascript'] }
 let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 1
+let g:syntastic_check_on_wq = 0
 " rubocop syntax check
-" nnoremap <F8> :SyntasticCheck<CR>
+nnoremap <F8> :SyntasticCheck<CR>
 nnoremap <F9> :SyntasticToggleMode<CR>
 "--------------------------------------------------------------------
 " vim-ruby
