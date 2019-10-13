@@ -31,7 +31,7 @@ if dein#load_state('/home/ysksn/.cache/dein')
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('roxma/nvim-yarp')
   call dein#add('roxma/vim-hug-neovim-rpc')
-	let g:deoplete#enable_at_startup = 1
+  call dein#add('dense-analysis/ale')
 
   " Required:
   call dein#end()
@@ -49,6 +49,23 @@ endif
 
 "----------------------------------------------------------------------
 " End dein Settings.
+"----------------------------------------------------------------------
+
+
+"----------------------------------------------------------------------
+" Start deoplete Settings.
+"----------------------------------------------------------------------
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#auto_complete_delay = 0
+let g:deoplete#auto_complete_start_length = 1
+let g:deoplete#enable_camel_case = 0
+let g:deoplete#enable_ignore_case = 0
+let g:deoplete#enable_refresh_always = 0
+let g:deoplete#enable_smart_case = 1
+let g:deoplete#file#enable_buffer_path = 1
+let g:deoplete#max_list = 10000
+"----------------------------------------------------------------------
+" End deoplete Settings.
 "----------------------------------------------------------------------
 
 set number
@@ -117,24 +134,14 @@ endif
 "--------------------------------------------------------------------
 " rubocop
 "--------------------------------------------------------------------
-" syntastic_mode_mapをactiveにするとバッファ保存時にsyntasticが走る
-" active_filetypesに、保存時にsyntasticを走らせるファイルタイプを指定する
-" let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby', 'javascript'] }
+" let g:syntastic_mode_map = { 'mode': 'passive', 'passive_filetypes': ['ruby', 'javascript'] }
 " let g:syntastic_ruby_checkers = ['rubocop']
 " let g:syntastic_javascript_checkers=['eslint']
 " let g:syntastic_check_on_open = 0
-" let g:syntastic_check_on_wq = 1
+" let g:syntastic_check_on_wq = 0
 " " rubocop syntax check
-" " nnoremap <F8> :SyntasticCheck<CR>
+" nnoremap <F8> :SyntasticCheck<CR>
 " nnoremap <F9> :SyntasticToggleMode<CR>
-let g:syntastic_mode_map = { 'mode': 'passive', 'passive_filetypes': ['ruby', 'javascript'] }
-let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_javascript_checkers=['eslint']
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-" rubocop syntax check
-nnoremap <F8> :SyntasticCheck<CR>
-nnoremap <F9> :SyntasticToggleMode<CR>
 "--------------------------------------------------------------------
 " vim-ruby
 "--------------------------------------------------------------------
