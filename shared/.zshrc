@@ -156,7 +156,7 @@ alias ll='ls -alF'
 alias mkdir='mkdir -p'
 alias rz='exec zsh -l'
 alias vi='vim'
-alias be='bundle exec'
+alias be='noglob bundle exec'
 
 alias ga='git add'
 alias gb='git branch'
