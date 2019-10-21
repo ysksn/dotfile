@@ -7,6 +7,9 @@ if [ $OS = 'Linux' ]; then
   export PATH="$PATH:/usr/local/android-studio/bin"
 fi
 
+# terraform
+export PATH="$PATH:$HOME/.terraform.d"
+
 # yarn
 export PATH="$PATH:`yarn global bin`"
 # nvm
