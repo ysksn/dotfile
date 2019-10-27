@@ -2,5 +2,6 @@
 --tag-relative=yes
 --exclude=.git
 --exclude=*.js
+--exclude=public
 --langmap=RUBY:.rb
---links=no
+--links=yes
