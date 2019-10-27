@@ -3,3 +3,4 @@
 --exclude=.git
 --exclude=*.js
 --langmap=RUBY:.rb
+--links=no
