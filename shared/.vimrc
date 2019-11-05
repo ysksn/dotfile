@@ -32,6 +32,7 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('roxma/nvim-yarp')
   call dein#add('roxma/vim-hug-neovim-rpc')
   call dein#add('dense-analysis/ale')
+  call dein#add('Yggdroot/indentLine')
 
   " Required:
   call dein#end()
@@ -48,9 +49,9 @@ if dein#check_install()
 endif
 
 "----------------------------------------------------------------------
-" End dein Settings.
+" Start indenntLine Settings.
 "----------------------------------------------------------------------
-
+let g:indentLine_char_list = ['|', '¦']
 
 "----------------------------------------------------------------------
 " Start deoplete Settings.
@@ -64,6 +65,7 @@ let g:deoplete#enable_refresh_always = 0
 let g:deoplete#enable_smart_case = 1
 let g:deoplete#file#enable_buffer_path = 1
 let g:deoplete#max_list = 10000
+
 "----------------------------------------------------------------------
 " End deoplete Settings.
 "----------------------------------------------------------------------
