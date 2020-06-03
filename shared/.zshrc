@@ -7,6 +7,9 @@ if [ $OS = 'Linux' ]; then
   export PATH="$PATH:/usr/local/android-studio/bin"
 fi
 
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # terraform
 export PATH="$PATH:$HOME/.terraform.d"
 
