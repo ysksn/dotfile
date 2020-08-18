@@ -33,6 +33,7 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('elzr/vim-json')
   call dein#add('leafgarland/typescript-vim')
   call dein#add('HerringtonDarkholme/yats.vim')
+  call dein#add('Shougo/denite.nvim')
 
   " Required:
   call dein#end()
