@@ -2,7 +2,7 @@
 " Start dein Settings.
 "----------------------------------------------------------------------
 if &compatible
-  set nocompatible               " Be iMproved
+  set nocompatible
 endif
 
 " Required:
@@ -12,14 +12,11 @@ set runtimepath+=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
 if dein#load_state($HOME . '/.cache/dein')
   call dein#begin($HOME . '/.cache/dein')
 
-  " Let dein manage dein
-  " Required:
+  " Let dein manage dein Required:
   call dein#add($HOME . '/.cache/dein/repos/github.com/Shougo/dein.vim')
-
 
   call dein#add('Shougo/vimproc.vim', { 'build' : 'make' })
   call dein#add('cohama/lexima.vim')
-  call dein#add('isRuslan/vim-es6')
   call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
@@ -33,6 +30,7 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('roxma/vim-hug-neovim-rpc')
   call dein#add('dense-analysis/ale')
   call dein#add('Yggdroot/indentLine')
+  call dein#add('elzr/vim-json')
 
   " Required:
   call dein#end()
@@ -49,12 +47,12 @@ if dein#check_install()
 endif
 
 "----------------------------------------------------------------------
-" Start indenntLine Settings.
+" indenntLine Settings.
 "----------------------------------------------------------------------
-let g:indentLine_char_list = ['|', '¦']
+let g:indentLine_char_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 "----------------------------------------------------------------------
-" Start deoplete Settings.
+" deoplete Settings.
 "----------------------------------------------------------------------
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option('num_processes', 5)
@@ -64,10 +62,6 @@ call deoplete#custom#option('smart_case', v:true)
 call deoplete#custom#option('enable_at_startup', v:true)
 call deoplete#custom#option('enable_buffer_path', v:true)
 call deoplete#custom#option('enable_refresh_always', v:false)
-
-"----------------------------------------------------------------------
-" End deoplete Settings.
-"----------------------------------------------------------------------
 
 set number
 set modeline
@@ -87,39 +81,24 @@ set noswapfile
 set maxmempattern=3000
 syntax enable
 au BufRead,BufNewFile *.md set filetype=markdown
+"--------------------------------------------------------------------
+" vim-json
+"--------------------------------------------------------------------
+let g:vim_json_syntax_conceal = 0
 
 "--------------------------------------------------------------------
-" Start NERDTree Settings.
+" NERDTree Settings.
 "--------------------------------------------------------------------
-" <C-e>でNERDTreeをオンオフ いつでもどこでも
 nmap <silent> <C-x>      :NERDTreeToggle<CR>
 vmap <silent> <C-x> <Esc>:NERDTreeToggle<CR>
 omap <silent> <C-x>      :NERDTreeToggle<CR>
 imap <silent> <C-x> <Esc>:NERDTreeToggle<CR>
-" cmap <silent> <C-x> <C-u>:NERDTreeToggle<CR> # Fix: ctags
-" 引数なしでvimを開いたらNERDTreeを起動、
-" 引数ありならNERDTreeは起動しない、引数で渡されたファイルを開く
-" autocmd vimenter * if !argc() | NERDTree | endif
-" 他のバッファをすべて閉じた時にNERDTreeが開いていたらNERDTreeも一緒に閉じる
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-" 無視するファイルを設定する
 let g:NERDTreeIgnore=['\.clean$', '\.swp$', '\.bak$', '\~$']
-" 隠しファイルを表示するか
 let g:NERDTreeShowHidden=0
-" ブックマークやヘルプのショートカットをメニューに表示する
 let g:NERDTreeMinimalUI=1
-" +|`などを使ってツリー表示をするか
-" 0 : 綺麗に見せる
-" 1 : +|`などを使わない
 let g:NERDTreeDirArrows=1
-" マウス操作方法
-" 1 : ファイル、ディレクトリ両方共ダブルクリックで開く
-" 2 : ディレクトリのみシングルクリックで開く
-" 3 : ファイル、ディレクトリ両方共シングルクリックで開く
 let g:NERDTreeMouseMode=2
-"--------------------------------------------------------------------
-" End NERDTree Settings.
-"--------------------------------------------------------------------
 
 "--------------------------------------------------------------------
 " 最後のカーソル位置を復元する
@@ -131,36 +110,20 @@ if has("autocmd")
     \ endif
 endif
 "--------------------------------------------------------------------
-
-"--------------------------------------------------------------------
-" rubocop
-"--------------------------------------------------------------------
-" let g:syntastic_mode_map = { 'mode': 'passive', 'passive_filetypes': ['ruby', 'javascript'] }
-" let g:syntastic_ruby_checkers = ['rubocop']
-" let g:syntastic_javascript_checkers=['eslint']
-" let g:syntastic_check_on_open = 0
-" let g:syntastic_check_on_wq = 0
-" " rubocop syntax check
-" nnoremap <F8> :SyntasticCheck<CR>
-" nnoremap <F9> :SyntasticToggleMode<CR>
-
-"--------------------------------------------------------------------
 " ALE
 "--------------------------------------------------------------------
 nnoremap <F9> :ALEToggle<CR>
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_insert_leave = 0
 let g:ale_lint_on_enter = 0
-
 "--------------------------------------------------------------------
 " vim-ruby
 "--------------------------------------------------------------------
-set nocompatible      " We're running Vim, not Vi!
-syntax on             " Enable syntax highlighting
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
-
+set nocompatible
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
 "--------------------------------------------------------------------
 " vim-submode
 "--------------------------------------------------------------------
