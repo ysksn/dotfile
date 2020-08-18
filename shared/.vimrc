@@ -31,6 +31,8 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('dense-analysis/ale')
   call dein#add('Yggdroot/indentLine')
   call dein#add('elzr/vim-json')
+  call dein#add('leafgarland/typescript-vim')
+  call dein#add('HerringtonDarkholme/yats.vim')
 
   " Required:
   call dein#end()
