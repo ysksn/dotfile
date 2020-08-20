@@ -4,5 +4,6 @@
 --exclude=*.js
 --exclude=public
 --exclude=vendor/bundle/gems/chanko-2.1.0/spec/*
+--exclude=vendor/bundle/ruby/2.6.0/gems/chanko-2.1.0/spec/*
 --langmap=RUBY:.rb
 --links=yes

@@ -33,6 +33,7 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('roxma/vim-hug-neovim-rpc')
   call dein#add('dense-analysis/ale')
   call dein#add('Yggdroot/indentLine')
+  call dein#add('chr4/nginx.vim')
 
   " Required:
   call dein#end()
