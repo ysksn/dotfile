@@ -61,7 +61,7 @@ let g:indentLine_char_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option('num_processes', 5)
 call deoplete#custom#option('max_list', 2000)
-call deoplete#custom#option('auto_complete_delay', 200)
+call deoplete#custom#option('auto_complete_delay', 100)
 call deoplete#custom#option('smart_case', v:true)
 call deoplete#custom#option('enable_at_startup', v:true)
 call deoplete#custom#option('enable_buffer_path', v:true)
