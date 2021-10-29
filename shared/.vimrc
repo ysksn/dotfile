@@ -35,6 +35,7 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('leafgarland/typescript-vim')
   call dein#add('HerringtonDarkholme/yats.vim')
   call dein#add('Shougo/denite.nvim')
+  call dein#add('rust-lang/rust.vim')
 
   " Required:
   call dein#end()

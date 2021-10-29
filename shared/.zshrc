@@ -3,6 +3,14 @@ OS=`uname`
 if [ $OS = 'Linux' ]; then
 fi
 
+# NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# Stripe
+fpath=(~/.stripe $fpath)
+autoload -Uz compinit && compinit -i
+
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -95,6 +103,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  autojump
   aws
   bundler
   capistrano
