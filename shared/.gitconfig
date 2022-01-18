@@ -12,3 +12,5 @@
   user = ysksn
 [http]
   postBuffer = 100M
+[url "git@github.com:"]
+	insteadOf = https://github.com/
