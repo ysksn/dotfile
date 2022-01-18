@@ -107,7 +107,6 @@ plugins=(
   aws
   bundler
   capistrano
-  cargo
   docker
   docker-compose
   gem
@@ -119,7 +118,6 @@ plugins=(
   redis-cli
   ruby
   rust
-  rustup
   tmux
   yarn
   zsh-completions
