@@ -123,7 +123,18 @@ plugins=(
   zsh-completions
 )
 
-autoload -U compinit && compinit
+if [ $OS = 'Linux' ]; then
+  autoload -U compinit && compinit
+fi
+
+if [ $OS = 'Darwin' ]; then
+  if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+  fi
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -163,8 +174,6 @@ if [ $OS = 'Linux' ]; then
   # aliases
   alias pbcopy='xclip -selection clipboard'
   alias pbpaste='xclip -selection clipboard -o'
-else
-  eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 fi
 
 alias ll='ls -alF'
