@@ -17,10 +17,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # terraform
 export PATH="$PATH:$HOME/.terraform.d"
 
-# nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
-
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
