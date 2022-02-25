@@ -68,6 +68,7 @@ call deoplete#custom#option('enable_at_startup', v:true)
 call deoplete#custom#option('enable_buffer_path', v:true)
 call deoplete#custom#option('enable_refresh_always', v:false)
 
+set tags=./tags;,tags
 set number
 set modeline
 set foldmethod=marker
