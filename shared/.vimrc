@@ -34,7 +34,6 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('elzr/vim-json')
   call dein#add('leafgarland/typescript-vim')
   call dein#add('HerringtonDarkholme/yats.vim')
-  call dein#add('Shougo/denite.nvim')
   call dein#add('rust-lang/rust.vim')
 
   " Required:
@@ -82,7 +81,7 @@ set expandtab
 set shiftwidth=2
 set clipboard+=unnamed
 set clipboard+=autoselect
-set nohlsearch
+set hlsearch
 set noswapfile
 set maxmempattern=3000
 syntax enable

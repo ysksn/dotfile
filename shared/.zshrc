@@ -125,6 +125,10 @@ if [ $OS = 'Linux' ]; then
 fi
 
 if [ $OS = 'Darwin' ]; then
+  # vimがpython3.10.2に依存しており
+  # deopleteが正しく起動できないため
+  export PATH="/opt/homebrew/Cellar/python@3.10/3.10.2/bin:$PATH"
+
   if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
@@ -193,3 +197,4 @@ alias gp='git pull --rebase'
 alias gr='git reset'
 alias gs='git status'
 alias gsl='git stash list'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
