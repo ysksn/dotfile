@@ -73,7 +73,7 @@ set modeline
 set foldmethod=marker
 set foldmarker=----------FoldFromHere,----------FoldEndHere
 set commentstring=###%s
-colorscheme slate
+colorscheme darkblue
 set tabstop=2
 set autoindent
 set smartindent
@@ -86,6 +86,16 @@ set noswapfile
 set maxmempattern=3000
 syntax enable
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" 背景透過
+augroup TransparentBG
+  autocmd!
+  autocmd Colorscheme * highlight Normal ctermbg=none
+  autocmd Colorscheme * highlight NonText ctermbg=none
+  autocmd Colorscheme * highlight LineNr ctermbg=none
+  autocmd Colorscheme * highlight Folded ctermbg=none
+  autocmd Colorscheme * highlight EndOfBuffer ctermbg=none
+augroup END
 "--------------------------------------------------------------------
 " vim-json
 "--------------------------------------------------------------------
