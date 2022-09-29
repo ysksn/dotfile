@@ -73,7 +73,7 @@ set modeline
 set foldmethod=marker
 set foldmarker=----------FoldFromHere,----------FoldEndHere
 set commentstring=###%s
-colorscheme darkblue
+colorscheme koehler
 set tabstop=2
 set autoindent
 set smartindent
