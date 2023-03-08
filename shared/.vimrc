@@ -104,10 +104,10 @@ let g:vim_json_syntax_conceal = 0
 "--------------------------------------------------------------------
 " NERDTree Settings.
 "--------------------------------------------------------------------
-nmap <silent> <C-b>      :NERDTreeToggle<CR>
-vmap <silent> <C-b> <Esc>:NERDTreeToggle<CR>
-omap <silent> <C-b>      :NERDTreeToggle<CR>
-imap <silent> <C-b> <Esc>:NERDTreeToggle<CR>
+nmap <silent> <C-x>      :NERDTreeToggle<CR>
+vmap <silent> <C-x> <Esc>:NERDTreeToggle<CR>
+omap <silent> <C-x>      :NERDTreeToggle<CR>
+imap <silent> <C-x> <Esc>:NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeIgnore=['\.clean$', '\.swp$', '\.bak$', '\~$']
 let g:NERDTreeShowHidden=0
