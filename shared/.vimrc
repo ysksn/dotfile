@@ -35,6 +35,8 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('leafgarland/typescript-vim')
   call dein#add('HerringtonDarkholme/yats.vim')
   call dein#add('rust-lang/rust.vim')
+  call dein#add('airblade/vim-gitgutter')
+  call dein#add('tpope/vim-fugitive')
 
   " Required:
   call dein#end()
@@ -84,6 +86,7 @@ set clipboard+=autoselect
 set hlsearch
 set noswapfile
 set maxmempattern=3000
+set updatetime=100
 syntax enable
 au BufRead,BufNewFile *.md set filetype=markdown
 
