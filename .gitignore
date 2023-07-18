@@ -6,4 +6,5 @@ ibus/
 shared/.vim/bundle/*
 shared/.tmux/resurrect/*
 shared/.bundle/cache/*
+shared/.config/coc/*
 .gitconfig
