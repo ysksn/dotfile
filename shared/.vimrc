@@ -24,7 +24,6 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('kchmck/vim-coffee-script')
   call dein#add('kana/vim-submode')
   call dein#add('scrooloose/nerdtree')
-  call dein#add('dense-analysis/ale')
   call dein#add('Yggdroot/indentLine')
   call dein#add('chr4/nginx.vim')
   call dein#add('elzr/vim-json')
@@ -118,24 +117,7 @@ if has("autocmd")
     \   exe "normal! g'\"" |
     \ endif
 endif
-"--------------------------------------------------------------------
-" ale
-"--------------------------------------------------------------------
-nnoremap <F9> :ALEToggle<CR>
-" call ch_logfile(expand('/tmp/chlogfile.log'), 'w')
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_insert_leave = 0
-let g:ale_lint_on_enter = 0
-let g:ale_linters = {
-    \ 'ruby': ['rubocop'],
-    \ 'javascript': ['eslint', 'prettier'],
-    \ }
-let g:ale_fixers = {
-    \ 'ruby': ['rubocop'],
-    \ 'javascript': ['eslint', 'prettier'],
-    \ 'typescript': ['eslint', 'tslint'],
-    \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-    \ }
+
 "--------------------------------------------------------------------
 " vim-ruby
 "--------------------------------------------------------------------
