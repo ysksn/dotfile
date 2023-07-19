@@ -75,6 +75,11 @@ set hlsearch
 set noswapfile
 set maxmempattern=3000
 set updatetime=100
+set ignorecase
+set smartcase
+set incsearch
+set wildignorecase
+
 syntax enable
 au BufRead,BufNewFile *.md set filetype=markdown
 
