@@ -34,6 +34,7 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('tpope/vim-fugitive')
   call dein#add('rhysd/vim-healthcheck')
   call dein#add('neoclide/coc.nvim')
+  call dein#add('github/copilot.vim')
 
   " Required:
   call dein#end()

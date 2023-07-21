@@ -3,8 +3,9 @@
 *.log
 chromium/
 ibus/
-shared/.vim/bundle/*
-shared/.tmux/resurrect/*
-shared/.bundle/cache/*
-shared/.config/coc/*
+shared/.vim/bundle/
+shared/.tmux/resurrect/
+shared/.bundle/cache/
+shared/.config/coc/
+shared/.config/github-copilot/
 .gitconfig
