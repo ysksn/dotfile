@@ -81,6 +81,7 @@ set ignorecase
 set smartcase
 set incsearch
 set wildignorecase
+set history=1000
 
 syntax enable
 au BufRead,BufNewFile *.md set filetype=markdown

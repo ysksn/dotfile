@@ -24,6 +24,11 @@ eval "$(rbenv init -)"
 # rbenv plugins
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # default editor is vim
 export EDITOR="vim"
 
@@ -106,6 +111,7 @@ plugins=(
   capistrano
   docker
   docker-compose
+  dotenv
   gem
   git
   npm
@@ -198,3 +204,10 @@ alias gr='git reset'
 alias gs='git status'
 alias gsl='git stash list'
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
