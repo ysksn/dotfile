@@ -4,30 +4,43 @@ if [ $OS = 'Linux' ]; then
 fi
 
 # NVM
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+if [[ $USE_NVM == "true" ]]; then
+  export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+  [ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
 
 # Stripe
-fpath=(~/.stripe $fpath)
-autoload -Uz compinit && compinit -i
+if [[ $USE_STRYPE == "true" ]]; then
+  fpath=(~/.stripe $fpath)
+  autoload -Uz compinit && compinit -i
+fi
 
 # Rust
-export PATH="$HOME/.cargo/bin:$PATH"
+if [[ $USE_RUST == "true" ]]; then
+  export PATH="$HOME/.cargo/bin:$PATH"
+fi
 
 # terraform
-export PATH="$PATH:$HOME/.terraform.d"
+if [[ $USE_TERRAFORM == "true" ]]; then
+  export PATH="$PATH:$HOME/.terraform.d"
+fi
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [[ $USE_RBENV == "true" ]]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
 
-# rbenv plugins
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+  # rbenv plugins
+  export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+fi
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if [[ $USE_PYENV == "true" ]]; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
 
 # default editor is vim
 export EDITOR="vim"
@@ -54,7 +67,9 @@ bindkey -e
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+if [[ $USE_OH_MY_ZSH == "true" ]]; then
+  export ZSH="$HOME/.oh-my-zsh"
+fi
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -203,8 +218,6 @@ alias gp='git pull --rebase'
 alias gr='git reset'
 alias gs='git status'
 alias gsl='git stash list'
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
