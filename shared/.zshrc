@@ -1,4 +1,4 @@
-ZSH_DOTENV_FILE=.env
+ZSH_DOTENV_FILE=~/.env
 source $ZSH_DOTENV_FILE
 
 OS=`uname`
