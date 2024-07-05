@@ -1,5 +1,7 @@
-OS=`uname`
+ZSH_DOTENV_FILE=.env
+source $ZSH_DOTENV_FILE
 
+OS=`uname`
 if [ $OS = 'Linux' ]; then
 fi
 
