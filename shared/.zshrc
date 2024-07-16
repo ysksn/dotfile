@@ -1,5 +1,4 @@
-ZSH_DOTENV_FILE=~/.env
-source $ZSH_DOTENV_FILE
+# 環境変数は ~/.zshenv に書く
 
 OS=`uname`
 if [ $OS = 'Linux' ]; then
