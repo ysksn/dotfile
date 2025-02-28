@@ -131,6 +131,7 @@ plugins=(
   gem
   git
   npm
+  nvm
   rails
   rake
   rbenv
