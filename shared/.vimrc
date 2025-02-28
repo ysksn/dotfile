@@ -34,7 +34,7 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('tpope/vim-unimpaired')
   call dein#add('tpope/vim-repeat')
   call dein#add('rhysd/vim-healthcheck')
-  call dein#add('neoclide/coc.nvim')
+  call dein#add('neoclide/coc.nvim', { 'rev': 'release' })
   call dein#add('github/copilot.vim')
 
   " Required:
