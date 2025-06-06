@@ -82,6 +82,7 @@ set incsearch
 set wildignorecase
 set history=1000
 set diffopt+=algorithm:patience,indent-heuristic
+set ttyfast
 
 syntax enable
 au BufRead,BufNewFile *.md set filetype=markdown
