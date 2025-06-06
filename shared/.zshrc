@@ -226,3 +226,8 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/yosuke.kabuto/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
