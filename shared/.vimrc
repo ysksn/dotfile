@@ -62,9 +62,8 @@ let g:indentLine_char_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
 set tags=./tags;,tags
 set number
 set modeline
-set foldmethod=marker
-set foldmarker=----------FoldFromHere,----------FoldEndHere
-set commentstring=###%s
+set foldmethod=syntax
+set foldlevel=99
 colorscheme koehler
 set tabstop=2
 set autoindent
